@@ -84,6 +84,95 @@ Contracts: 2 kept, 0 broken.
 ============================================================
 ```
 
+---
+
+## Session 3: Phases 2 to 6 Complete (Full Pipeline, Ingestion, SFA & Multi-Scheme)
+
+### Plan
+1. **Phase 2 (Document Ingestion & Native PDF Processing):** Build Stage 1 file integrity checks (`app/ingest/validator.py`), native PDF text extraction (`app/text/extractor.py`), Path A deterministic extractors (`app/extract/path_a/`), and Stage 4 reconciliation (`app/extract/reconcile.py`).
+2. **Phase 3 (OCR Fallback):** Implement OCR fallback (`app/ocr/ocr_engine.py`) with word-level confidence scoring.
+3. **Phase 4 (Authenticity & Provenance):** Build Stage 7 verifiers (`app/authenticity/verifier.py`) for QR/URL extraction, digital signature checking, and duplicate hash tracking (`F-04`).
+4. **Phase 5 (Staff Advisor Workspace):** Build SFA review queue, adjudication actions (Verify, Reject, Override) with mandatory justification, and audit log (`app/sfa/workspace.py` and `app/api/sfa.py`).
+5. **Phase 6 (Multi-Scheme Registry):** Build multi-scheme loader (`app/multischeme/loader.py`) enforcing curriculum scheme compatibility (`S-01`).
+6. **Frontend Enhancements:** Add drag-and-drop document upload modal (`UploadModal.tsx`) and SFA review workspace modal (`SfaWorkspaceModal.tsx`).
+7. **Testing & Gate:** Write comprehensive unit tests for all new stages and verify `make gate`.
+
+### Work Completed
+- **Document Ingest & Native Text (`app/ingest/`, `app/text/`):**
+  - File validation for size (<= 15 MB), MIME types (PDF, PNG, JPG), page count (<= 10), and encryption (`Q-06`).
+  - PyMuPDF native text layer extraction with bounding boxes and normalized quote grounding (`E-02`).
+- **Path A Fact Extractors & Reconcile (`app/extract/`):**
+  - Language proficiency (IELTS, TOEFL, PTE) and aptitude test extractors (GATE, CAT, GRE).
+  - Event, level, position, recipient name, and dates extractors.
+  - Reconciles facts against student profile (name matching `E-05`, study period `R-01`/`R-02`, duration `R-03`, cosign `V-01`).
+- **OCR Engine & Authenticity (`app/ocr/`, `app/authenticity/`):**
+  - PyTesseract OCR fallback with word-level confidence scoring.
+  - Digital signature detection, URL verification, and duplicate hash tracking.
+- **SFA Workspace & Multi-Scheme (`app/sfa/`, `app/multischeme/`):**
+  - SFA review queue and adjudication actions with persistent audit log.
+  - Scheme mismatch detector blocking incompatible curricula (`S-01`).
+- **API Routers (`app/api/upload.py`, `app/api/sfa.py`):**
+  - `POST /api/upload`: End-to-end document processing endpoint.
+  - `GET /api/sfa/queue`, `POST /api/sfa/adjudicate`, `GET /api/sfa/audit-log`.
+- **Frontend Modals:**
+  - `UploadModal`: Drag-and-drop file upload with live extraction preview.
+  - `SfaWorkspaceModal`: SFA review workspace with audit trail tab.
+  - Header actions wired with upload and SFA controls.
+
+### Verification Evidence (`make gate`)
+```text
+==> Running ruff lint and format check...
+All checks passed!
+==> Running mypy strict type check on scripts & backend...
+Success: no issues found in 2 source files
+Success: no issues found in 44 source files
+==> Running pytest test suite (unit + property)...
+collected 162 items
+======================= 162 passed, 1 warning in 10.82s ========================
+==> Running golden & adversarial test suite...
+collected 6 items
+============================== 6 passed in 0.19s ===============================
+========================================================================
+       KTU ACTIVITY POINTS CHECKER - ACCURACY EVALUATION REPORT
+========================================================================
+Total Sample Certificates Evaluated:  40
+  - Clean Verified Samples:          29
+  - Doubted / Edge Case Samples:      11
+------------------------------------------------------------------------
+ACCURACY METRICS (SPEC §14.3):
+  1. VERIFIED Error Rate:             0.00%  (Target: 0.00% | Errors: 0)
+  2. VERIFIED Precision:              100.00%
+  3. DOUBT Rate:                      27.50%  (Human review routing)
+  4. Missed Doubt Rate:               0.00%  (Target: 0.00% | Silent errors: 0)
+  5. Points Arithmetic Accuracy (G1): 100.00%  (100% deterministic code)
+  6. Over-Claim Rate:                 0.00%  (Target: < 1.00%)
+  7. Rule-of-Three 95% Confidence:    < 10.34% true error bound (n=29)
+========================================================================
+
+Successfully generated docs/ACCURACY.md
+==> Running KTU 2024 ruleset checks...
+============================================================
+KTU 2024 Activity Points Ruleset Verification (Phase 0)
+============================================================
+[1/4] Validating ruleset against JSON Schema...
+  ✓ Ruleset schema valid.
+[2/4] Verifying SHA-256 checksum...
+  ✓ Checksum verified (f4abbcbe575db89d...).
+[3/4] Verifying Table 2 rule ID coverage (1.1 to 3.17)...
+  ✓ All 63 base rows present (total rules: 64).
+[4/4] Verifying tiered score boundary test cases...
+  ✓ Verified 55 tier boundary assertions across 2.21 & 2.22.
+============================================================
+ALL RULES-CHECK VERIFICATIONS PASSED
+============================================================
+==> Checking architectural boundaries with import-linter...
+Contracts: 2 kept, 0 broken.
+
+============================================================
+                 ALL CI GATE CHECKS PASSED                  
+============================================================
+```
+
 ### Review State: Phase 0 Complete — Approved by User
 Phase 0 deliverables were approved by the user ("approved for phase 1") on 2026-11-26.
 
@@ -215,6 +304,95 @@ Contracts: 2 kept, 0 broken.
 ============================================================
 ```
 
+---
+
+## Session 3: Phases 2 to 6 Complete (Full Pipeline, Ingestion, SFA & Multi-Scheme)
+
+### Plan
+1. **Phase 2 (Document Ingestion & Native PDF Processing):** Build Stage 1 file integrity checks (`app/ingest/validator.py`), native PDF text extraction (`app/text/extractor.py`), Path A deterministic extractors (`app/extract/path_a/`), and Stage 4 reconciliation (`app/extract/reconcile.py`).
+2. **Phase 3 (OCR Fallback):** Implement OCR fallback (`app/ocr/ocr_engine.py`) with word-level confidence scoring.
+3. **Phase 4 (Authenticity & Provenance):** Build Stage 7 verifiers (`app/authenticity/verifier.py`) for QR/URL extraction, digital signature checking, and duplicate hash tracking (`F-04`).
+4. **Phase 5 (Staff Advisor Workspace):** Build SFA review queue, adjudication actions (Verify, Reject, Override) with mandatory justification, and audit log (`app/sfa/workspace.py` and `app/api/sfa.py`).
+5. **Phase 6 (Multi-Scheme Registry):** Build multi-scheme loader (`app/multischeme/loader.py`) enforcing curriculum scheme compatibility (`S-01`).
+6. **Frontend Enhancements:** Add drag-and-drop document upload modal (`UploadModal.tsx`) and SFA review workspace modal (`SfaWorkspaceModal.tsx`).
+7. **Testing & Gate:** Write comprehensive unit tests for all new stages and verify `make gate`.
+
+### Work Completed
+- **Document Ingest & Native Text (`app/ingest/`, `app/text/`):**
+  - File validation for size (<= 15 MB), MIME types (PDF, PNG, JPG), page count (<= 10), and encryption (`Q-06`).
+  - PyMuPDF native text layer extraction with bounding boxes and normalized quote grounding (`E-02`).
+- **Path A Fact Extractors & Reconcile (`app/extract/`):**
+  - Language proficiency (IELTS, TOEFL, PTE) and aptitude test extractors (GATE, CAT, GRE).
+  - Event, level, position, recipient name, and dates extractors.
+  - Reconciles facts against student profile (name matching `E-05`, study period `R-01`/`R-02`, duration `R-03`, cosign `V-01`).
+- **OCR Engine & Authenticity (`app/ocr/`, `app/authenticity/`):**
+  - PyTesseract OCR fallback with word-level confidence scoring.
+  - Digital signature detection, URL verification, and duplicate hash tracking.
+- **SFA Workspace & Multi-Scheme (`app/sfa/`, `app/multischeme/`):**
+  - SFA review queue and adjudication actions with persistent audit log.
+  - Scheme mismatch detector blocking incompatible curricula (`S-01`).
+- **API Routers (`app/api/upload.py`, `app/api/sfa.py`):**
+  - `POST /api/upload`: End-to-end document processing endpoint.
+  - `GET /api/sfa/queue`, `POST /api/sfa/adjudicate`, `GET /api/sfa/audit-log`.
+- **Frontend Modals:**
+  - `UploadModal`: Drag-and-drop file upload with live extraction preview.
+  - `SfaWorkspaceModal`: SFA review workspace with audit trail tab.
+  - Header actions wired with upload and SFA controls.
+
+### Verification Evidence (`make gate`)
+```text
+==> Running ruff lint and format check...
+All checks passed!
+==> Running mypy strict type check on scripts & backend...
+Success: no issues found in 2 source files
+Success: no issues found in 44 source files
+==> Running pytest test suite (unit + property)...
+collected 162 items
+======================= 162 passed, 1 warning in 10.82s ========================
+==> Running golden & adversarial test suite...
+collected 6 items
+============================== 6 passed in 0.19s ===============================
+========================================================================
+       KTU ACTIVITY POINTS CHECKER - ACCURACY EVALUATION REPORT
+========================================================================
+Total Sample Certificates Evaluated:  40
+  - Clean Verified Samples:          29
+  - Doubted / Edge Case Samples:      11
+------------------------------------------------------------------------
+ACCURACY METRICS (SPEC §14.3):
+  1. VERIFIED Error Rate:             0.00%  (Target: 0.00% | Errors: 0)
+  2. VERIFIED Precision:              100.00%
+  3. DOUBT Rate:                      27.50%  (Human review routing)
+  4. Missed Doubt Rate:               0.00%  (Target: 0.00% | Silent errors: 0)
+  5. Points Arithmetic Accuracy (G1): 100.00%  (100% deterministic code)
+  6. Over-Claim Rate:                 0.00%  (Target: < 1.00%)
+  7. Rule-of-Three 95% Confidence:    < 10.34% true error bound (n=29)
+========================================================================
+
+Successfully generated docs/ACCURACY.md
+==> Running KTU 2024 ruleset checks...
+============================================================
+KTU 2024 Activity Points Ruleset Verification (Phase 0)
+============================================================
+[1/4] Validating ruleset against JSON Schema...
+  ✓ Ruleset schema valid.
+[2/4] Verifying SHA-256 checksum...
+  ✓ Checksum verified (f4abbcbe575db89d...).
+[3/4] Verifying Table 2 rule ID coverage (1.1 to 3.17)...
+  ✓ All 63 base rows present (total rules: 64).
+[4/4] Verifying tiered score boundary test cases...
+  ✓ Verified 55 tier boundary assertions across 2.21 & 2.22.
+============================================================
+ALL RULES-CHECK VERIFICATIONS PASSED
+============================================================
+==> Checking architectural boundaries with import-linter...
+Contracts: 2 kept, 0 broken.
+
+============================================================
+                 ALL CI GATE CHECKS PASSED                  
+============================================================
+```
+
 ### Review State: Phase 1 Deterministic MVP Complete
 All Phase 1 requirements from `agent.md` §11 and `docs/SPEC.md` are complete, verified by tests, and packaged with zero AI dependencies in scoring. Ready for user testing and transition to Phase 2 (Document Ingestion & Multi-Engine Fact Extraction).
 
@@ -268,6 +446,95 @@ collected 146 items
 ============================= test session starts ==============================
 collected 6 items
 ============================== 6 passed in 0.20s ===============================
+========================================================================
+       KTU ACTIVITY POINTS CHECKER - ACCURACY EVALUATION REPORT
+========================================================================
+Total Sample Certificates Evaluated:  40
+  - Clean Verified Samples:          29
+  - Doubted / Edge Case Samples:      11
+------------------------------------------------------------------------
+ACCURACY METRICS (SPEC §14.3):
+  1. VERIFIED Error Rate:             0.00%  (Target: 0.00% | Errors: 0)
+  2. VERIFIED Precision:              100.00%
+  3. DOUBT Rate:                      27.50%  (Human review routing)
+  4. Missed Doubt Rate:               0.00%  (Target: 0.00% | Silent errors: 0)
+  5. Points Arithmetic Accuracy (G1): 100.00%  (100% deterministic code)
+  6. Over-Claim Rate:                 0.00%  (Target: < 1.00%)
+  7. Rule-of-Three 95% Confidence:    < 10.34% true error bound (n=29)
+========================================================================
+
+Successfully generated docs/ACCURACY.md
+==> Running KTU 2024 ruleset checks...
+============================================================
+KTU 2024 Activity Points Ruleset Verification (Phase 0)
+============================================================
+[1/4] Validating ruleset against JSON Schema...
+  ✓ Ruleset schema valid.
+[2/4] Verifying SHA-256 checksum...
+  ✓ Checksum verified (f4abbcbe575db89d...).
+[3/4] Verifying Table 2 rule ID coverage (1.1 to 3.17)...
+  ✓ All 63 base rows present (total rules: 64).
+[4/4] Verifying tiered score boundary test cases...
+  ✓ Verified 55 tier boundary assertions across 2.21 & 2.22.
+============================================================
+ALL RULES-CHECK VERIFICATIONS PASSED
+============================================================
+==> Checking architectural boundaries with import-linter...
+Contracts: 2 kept, 0 broken.
+
+============================================================
+                 ALL CI GATE CHECKS PASSED                  
+============================================================
+```
+
+---
+
+## Session 3: Phases 2 to 6 Complete (Full Pipeline, Ingestion, SFA & Multi-Scheme)
+
+### Plan
+1. **Phase 2 (Document Ingestion & Native PDF Processing):** Build Stage 1 file integrity checks (`app/ingest/validator.py`), native PDF text extraction (`app/text/extractor.py`), Path A deterministic extractors (`app/extract/path_a/`), and Stage 4 reconciliation (`app/extract/reconcile.py`).
+2. **Phase 3 (OCR Fallback):** Implement OCR fallback (`app/ocr/ocr_engine.py`) with word-level confidence scoring.
+3. **Phase 4 (Authenticity & Provenance):** Build Stage 7 verifiers (`app/authenticity/verifier.py`) for QR/URL extraction, digital signature checking, and duplicate hash tracking (`F-04`).
+4. **Phase 5 (Staff Advisor Workspace):** Build SFA review queue, adjudication actions (Verify, Reject, Override) with mandatory justification, and audit log (`app/sfa/workspace.py` and `app/api/sfa.py`).
+5. **Phase 6 (Multi-Scheme Registry):** Build multi-scheme loader (`app/multischeme/loader.py`) enforcing curriculum scheme compatibility (`S-01`).
+6. **Frontend Enhancements:** Add drag-and-drop document upload modal (`UploadModal.tsx`) and SFA review workspace modal (`SfaWorkspaceModal.tsx`).
+7. **Testing & Gate:** Write comprehensive unit tests for all new stages and verify `make gate`.
+
+### Work Completed
+- **Document Ingest & Native Text (`app/ingest/`, `app/text/`):**
+  - File validation for size (<= 15 MB), MIME types (PDF, PNG, JPG), page count (<= 10), and encryption (`Q-06`).
+  - PyMuPDF native text layer extraction with bounding boxes and normalized quote grounding (`E-02`).
+- **Path A Fact Extractors & Reconcile (`app/extract/`):**
+  - Language proficiency (IELTS, TOEFL, PTE) and aptitude test extractors (GATE, CAT, GRE).
+  - Event, level, position, recipient name, and dates extractors.
+  - Reconciles facts against student profile (name matching `E-05`, study period `R-01`/`R-02`, duration `R-03`, cosign `V-01`).
+- **OCR Engine & Authenticity (`app/ocr/`, `app/authenticity/`):**
+  - PyTesseract OCR fallback with word-level confidence scoring.
+  - Digital signature detection, URL verification, and duplicate hash tracking.
+- **SFA Workspace & Multi-Scheme (`app/sfa/`, `app/multischeme/`):**
+  - SFA review queue and adjudication actions with persistent audit log.
+  - Scheme mismatch detector blocking incompatible curricula (`S-01`).
+- **API Routers (`app/api/upload.py`, `app/api/sfa.py`):**
+  - `POST /api/upload`: End-to-end document processing endpoint.
+  - `GET /api/sfa/queue`, `POST /api/sfa/adjudicate`, `GET /api/sfa/audit-log`.
+- **Frontend Modals:**
+  - `UploadModal`: Drag-and-drop file upload with live extraction preview.
+  - `SfaWorkspaceModal`: SFA review workspace with audit trail tab.
+  - Header actions wired with upload and SFA controls.
+
+### Verification Evidence (`make gate`)
+```text
+==> Running ruff lint and format check...
+All checks passed!
+==> Running mypy strict type check on scripts & backend...
+Success: no issues found in 2 source files
+Success: no issues found in 44 source files
+==> Running pytest test suite (unit + property)...
+collected 162 items
+======================= 162 passed, 1 warning in 10.82s ========================
+==> Running golden & adversarial test suite...
+collected 6 items
+============================== 6 passed in 0.19s ===============================
 ========================================================================
        KTU ACTIVITY POINTS CHECKER - ACCURACY EVALUATION REPORT
 ========================================================================

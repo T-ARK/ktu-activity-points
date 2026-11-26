@@ -15,6 +15,8 @@ import { DashboardView } from './components/DashboardView';
 import { RulesExplorerView } from './components/RulesExplorerView';
 import { ManualEntryModal } from './components/ManualEntryModal';
 import { ProfileModal } from './components/ProfileModal';
+import { UploadModal } from './components/UploadModal';
+import { SfaWorkspaceModal } from './components/SfaWorkspaceModal';
 
 export const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'dashboard' | 'rules'>('dashboard');
@@ -26,6 +28,8 @@ export const App: React.FC = () => {
 
   const [isAddModalOpen, setIsAddModalOpen] = useState<boolean>(false);
   const [isProfileModalOpen, setIsProfileModalOpen] = useState<boolean>(false);
+  const [isUploadModalOpen, setIsUploadModalOpen] = useState<boolean>(false);
+  const [isSfaModalOpen, setIsSfaModalOpen] = useState<boolean>(false);
   const [isLoadingSample, setIsLoadingSample] = useState<boolean>(false);
 
   const loadData = async () => {
@@ -92,6 +96,8 @@ export const App: React.FC = () => {
         setActiveTab={setActiveTab}
         onOpenAddModal={() => setIsAddModalOpen(true)}
         onOpenProfileModal={() => setIsProfileModalOpen(true)}
+        onOpenUploadModal={() => setIsUploadModalOpen(true)}
+        onOpenSfaModal={() => setIsSfaModalOpen(true)}
         onLoadSample={handleLoadSample}
         isLoadingSample={isLoadingSample}
       />
@@ -146,6 +152,24 @@ export const App: React.FC = () => {
         isOpen={isAddModalOpen}
         onClose={() => setIsAddModalOpen(false)}
         onAdd={handleAddActivity}
+      />
+
+      <UploadModal
+        isOpen={isUploadModalOpen}
+        onClose={() => setIsUploadModalOpen(false)}
+        onUploadSuccess={async () => {
+          const newDash = await fetchDashboard();
+          setDashboardData(newDash);
+        }}
+      />
+
+      <SfaWorkspaceModal
+        isOpen={isSfaModalOpen}
+        onClose={() => setIsSfaModalOpen(false)}
+        onAdjudicationComplete={async () => {
+          const newDash = await fetchDashboard();
+          setDashboardData(newDash);
+        }}
       />
 
       {/* Footer */}

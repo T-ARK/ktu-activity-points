@@ -89,6 +89,19 @@ export interface DoubtDetail {
   points_impact: string;
 }
 
+export type AdjudicationAction = 'verify' | 'reject' | 'override';
+
+export interface SfaAuditEntry {
+  audit_id: string;
+  certificate_id: string;
+  action: AdjudicationAction;
+  previous_verdict: string;
+  new_verdict: string;
+  sfa_name: string;
+  reason: string;
+  timestamp: string;
+}
+
 export interface DashboardResponse {
   engine_result: EngineResult;
   doubt_catalog: Record<string, DoubtDetail>;

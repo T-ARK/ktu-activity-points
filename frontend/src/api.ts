@@ -72,3 +72,50 @@ export async function fetchDashboard(): Promise<DashboardResponse> {
 export function getExportUrl(format: 'csv' | 'pdf'): string {
   return `${API_BASE}/export?format=${format}`;
 }
+
+export async function uploadDocument(file: File): Promise<CertificateFacts> {
+  const formData = new FormData();
+  formData.append('file', file);
+
+  const res = await fetch(`${API_BASE}/upload`, {
+    method: 'POST',
+    body: formData,
+  });
+
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({ detail: 'Failed to upload document' }));
+    throw new Error(err.detail || 'Failed to upload document');
+  }
+  return res.json();
+}
+
+export async function fetchSfaQueue(): Promise<CertificateFacts[]> {
+  const res = await fetch(`${API_BASE}/sfa/queue`);
+  if (!res.ok) throw new Error('Failed to fetch SFA review queue');
+  return res.json();
+}
+
+export async function adjudicateActivity(payload: {
+  certificate_id: string;
+  action: string;
+  sfa_name: string;
+  reason: string;
+  override_rule_id?: string;
+}): Promise<any> {
+  const res = await fetch(`${API_BASE}/sfa/adjudicate`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload),
+  });
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({ detail: 'Failed to adjudicate activity' }));
+    throw new Error(err.detail || 'Failed to adjudicate activity');
+  }
+  return res.json();
+}
+
+export async function fetchSfaAuditLog(): Promise<any[]> {
+  const res = await fetch(`${API_BASE}/sfa/audit-log`);
+  if (!res.ok) throw new Error('Failed to fetch SFA audit log');
+  return res.json();
+}

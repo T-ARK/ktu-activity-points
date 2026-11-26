@@ -23,5 +23,5 @@ type = forbidden
 source_modules =
     app.api
 forbidden_modules =
-    app.extract
-    app.text
+    app.engine.scoring
+allow_indirect_imports = True

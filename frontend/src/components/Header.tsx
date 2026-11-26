@@ -1,5 +1,5 @@
 import React from 'react';
-import { Award, BookOpen, Download, FileText, PlusCircle, User, RefreshCw } from 'lucide-react';
+import { Award, BookOpen, Download, FileText, PlusCircle, User, RefreshCw, UploadCloud, ShieldCheck } from 'lucide-react';
 import { getExportUrl } from '../api';
 
 interface HeaderProps {
@@ -7,6 +7,8 @@ interface HeaderProps {
   setActiveTab: (tab: 'dashboard' | 'rules') => void;
   onOpenAddModal: () => void;
   onOpenProfileModal: () => void;
+  onOpenUploadModal: () => void;
+  onOpenSfaModal: () => void;
   onLoadSample: () => void;
   isLoadingSample: boolean;
 }
@@ -16,6 +18,8 @@ export const Header: React.FC<HeaderProps> = ({
   setActiveTab,
   onOpenAddModal,
   onOpenProfileModal,
+  onOpenUploadModal,
+  onOpenSfaModal,
   onLoadSample,
   isLoadingSample,
 }) => {
@@ -110,13 +114,33 @@ export const Header: React.FC<HeaderProps> = ({
               <User className="w-4 h-4" />
             </button>
 
+            {/* SFA Workspace Button */}
+            <button
+              onClick={onOpenSfaModal}
+              title="Staff Advisor (SFA) Review Workspace"
+              className="flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-semibold text-indigo-700 bg-indigo-50 hover:bg-indigo-100 rounded-lg transition-colors border border-indigo-200"
+            >
+              <ShieldCheck className="w-3.5 h-3.5 text-indigo-600" />
+              <span className="hidden md:inline">SFA Review</span>
+            </button>
+
+            {/* Upload Certificate Button */}
+            <button
+              onClick={onOpenUploadModal}
+              title="Upload Certificate (PDF, PNG, JPG) with Automatic Fact Extraction"
+              className="flex items-center gap-1.5 px-3 py-1.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-xs sm:text-sm font-medium shadow-sm transition-all"
+            >
+              <UploadCloud className="w-4 h-4" />
+              <span className="hidden sm:inline">Upload</span>
+            </button>
+
             {/* Add Activity Button */}
             <button
               onClick={onOpenAddModal}
               className="flex items-center gap-1.5 px-3 py-1.5 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-xs sm:text-sm font-medium shadow-sm transition-all"
             >
               <PlusCircle className="w-4 h-4" />
-              <span className="hidden sm:inline">Add Activity</span>
+              <span className="hidden sm:inline">Manual Entry</span>
             </button>
           </div>
         </div>

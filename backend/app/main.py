@@ -8,6 +8,8 @@ from app.api.dashboard import router as dashboard_router
 from app.api.export import router as export_router
 from app.api.profile import router as profile_router
 from app.api.rules import router as rules_router
+from app.api.sfa import router as sfa_router
+from app.api.upload import router as upload_router
 
 app = FastAPI(
     title="KTU Activity Points Checker API",
@@ -30,6 +32,8 @@ app.include_router(rules_router)
 app.include_router(activities_router)
 app.include_router(dashboard_router)
 app.include_router(export_router)
+app.include_router(upload_router)
+app.include_router(sfa_router)
 
 
 @app.get("/api/health", tags=["system"])
