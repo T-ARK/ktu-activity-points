@@ -1,0 +1,1035 @@
+{
+  "version": "1.0",
+  "ruleset_version": "ktu-2024-v1",
+  "description": "Adjudicated golden evaluation set of synthetic sample certificates for KTU Activity Points Checker",
+  "samples": [
+    {
+      "id": "GOLDEN-G1-01",
+      "group": "I",
+      "facts": {
+        "certificate_id": "GOLDEN-G1-01",
+        "rule_id": "1.1",
+        "activity_title": "KTU Interzone Basketball Tournament 2024 - Participant",
+        "event_name": "KTU Interzone Basketball Tournament 2024",
+        "organiser": "KTU Sports Council",
+        "level": "zonal",
+        "position": "Participation",
+        "activity_date": "2024-10-15",
+        "academic_year": "2024-2025",
+        "semester": "S1",
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "student_asserted": false
+      },
+      "expected": {
+        "rule_id": "1.1",
+        "raw_points": 5,
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "rationale": "Rule 1.1 Zonal participation = 5 points per Table 2 row 1.1"
+      }
+    },
+    {
+      "id": "GOLDEN-G1-02",
+      "group": "I",
+      "facts": {
+        "certificate_id": "GOLDEN-G1-02",
+        "rule_id": "1.2",
+        "activity_title": "Kerala State Inter-Collegiate Arts Festival - Classical Music",
+        "event_name": "Kerala State Youth Festival 2025",
+        "organiser": "Kerala Cultural Affairs",
+        "level": "state",
+        "position": "1st Prize",
+        "activity_date": "2025-02-14",
+        "academic_year": "2024-2025",
+        "semester": "S2",
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "student_asserted": false
+      },
+      "expected": {
+        "rule_id": "1.2",
+        "raw_points": 20,
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "rationale": "Rule 1.2 State level 1st prize single winner = 20 points per Table 2 row 1.2"
+      }
+    },
+    {
+      "id": "GOLDEN-G1-03",
+      "group": "I",
+      "facts": {
+        "certificate_id": "GOLDEN-G1-03",
+        "rule_id": "1.3",
+        "activity_title": "All India Inter-University Volleyball Championship - 2nd Prize",
+        "event_name": "All India Inter-University Volleyball 2025",
+        "organiser": "Association of Indian Universities (AIU)",
+        "level": "national",
+        "position": "2nd Prize",
+        "activity_date": "2025-01-18",
+        "academic_year": "2024-2025",
+        "semester": "S2",
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "student_asserted": false
+      },
+      "expected": {
+        "rule_id": "1.3",
+        "raw_points": 30,
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "rationale": "Rule 1.3 National level group events winner = 30 points per Table 2 row 1.3"
+      }
+    },
+    {
+      "id": "GOLDEN-G1-04",
+      "group": "I",
+      "facts": {
+        "certificate_id": "GOLDEN-G1-04",
+        "rule_id": "1.4",
+        "activity_title": "Poem Published in College Annual Magazine",
+        "event_name": "College Magazine 2024-25 Release",
+        "organiser": "College Magazine Editorial Board",
+        "level": "college",
+        "activity_date": "2025-03-20",
+        "academic_year": "2024-2025",
+        "semester": "S2",
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "student_asserted": false
+      },
+      "expected": {
+        "rule_id": "1.4",
+        "raw_points": 5,
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "rationale": "Rule 1.4 College magazine article = 5 points per unit, max 15 per Table 2 row 1.4"
+      }
+    },
+    {
+      "id": "GOLDEN-G1-05",
+      "group": "I",
+      "facts": {
+        "certificate_id": "GOLDEN-G1-05",
+        "rule_id": "1.5",
+        "activity_title": "Four-Wheeler Light Motor Vehicle Driving License",
+        "event_name": "Motor Vehicles Department Kerala License Issuance",
+        "organiser": "Motor Vehicles Department Kerala",
+        "level": "state",
+        "activity_date": "2024-11-05",
+        "academic_year": "2024-2025",
+        "semester": "S1",
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "student_asserted": false
+      },
+      "expected": {
+        "rule_id": "1.5",
+        "raw_points": 5,
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "rationale": "Rule 1.5 Four wheeler license obtained during course = 5 points flat"
+      }
+    },
+    {
+      "id": "GOLDEN-G1-06",
+      "group": "I",
+      "facts": {
+        "certificate_id": "GOLDEN-G1-06",
+        "rule_id": "1.8",
+        "activity_title": "Voluntary Blood Donation at District Hospital",
+        "event_name": "National Voluntary Blood Donation Day Camp",
+        "organiser": "Government Medical College Blood Bank",
+        "level": "college",
+        "activity_date": "2025-01-10",
+        "academic_year": "2024-2025",
+        "semester": "S2",
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "student_asserted": false
+      },
+      "expected": {
+        "rule_id": "1.8",
+        "raw_points": 5,
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "rationale": "Rule 1.8 Blood donation = 5 points per donation, subhead cap 10"
+      }
+    },
+    {
+      "id": "GOLDEN-G1-07",
+      "group": "I",
+      "facts": {
+        "certificate_id": "GOLDEN-G1-07",
+        "rule_id": "1.11",
+        "activity_title": "NSS Volunteer Completion (Two Full Years)",
+        "event_name": "NSS Directorate Kerala Regular Volunteer Scheme",
+        "organiser": "National Service Scheme (NSS) Cell, KTU",
+        "level": "state",
+        "activity_date": "2026-03-31",
+        "academic_year": "2025-2026",
+        "semester": "S4",
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "student_asserted": false
+      },
+      "expected": {
+        "rule_id": "1.11",
+        "raw_points": 30,
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "rationale": "Rule 1.11 Two years NSS volunteer = 30 points flat"
+      }
+    },
+    {
+      "id": "GOLDEN-G1-08",
+      "group": "I",
+      "facts": {
+        "certificate_id": "GOLDEN-G1-08",
+        "rule_id": "1.19",
+        "activity_title": "NCC 'C' Certificate - Army Wing",
+        "event_name": "NCC Directorate Kerala & Lakshadweep Certificate Examination",
+        "organiser": "National Cadet Corps (NCC)",
+        "level": "national",
+        "position": "NCC 'C' Certificate",
+        "activity_date": "2026-02-20",
+        "academic_year": "2025-2026",
+        "semester": "S4",
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "student_asserted": false
+      },
+      "expected": {
+        "rule_id": "1.19",
+        "raw_points": 30,
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "rationale": "Rule 1.19 NCC 'C' Certificate = 30 points"
+      }
+    },
+    {
+      "id": "GOLDEN-G1-09",
+      "group": "I",
+      "facts": {
+        "certificate_id": "GOLDEN-G1-09",
+        "rule_id": "1.20",
+        "activity_title": "CPR & Basic Life Support (BLS) Certification",
+        "event_name": "Emergency First Aid & Life Support Training",
+        "organiser": "Kerala Fire & Rescue Services Academy",
+        "level": "college",
+        "activity_date": "2024-11-22",
+        "academic_year": "2024-2025",
+        "semester": "S1",
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "student_asserted": false
+      },
+      "expected": {
+        "rule_id": "1.20",
+        "raw_points": 5,
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "rationale": "Rule 1.20 Emergency response / CPR training = 5 points per unit, cap 10"
+      }
+    },
+    {
+      "id": "GOLDEN-G1-10",
+      "group": "I",
+      "facts": {
+        "certificate_id": "GOLDEN-G1-10",
+        "rule_id": "1.21",
+        "activity_title": "Basic Swimming Proficiency Certificate",
+        "event_name": "Water Safety and Swimming Assessment",
+        "organiser": "Kerala State Sports Council Approved Aquatic Club",
+        "level": "college",
+        "activity_date": "2024-12-05",
+        "academic_year": "2024-2025",
+        "semester": "S1",
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "student_asserted": false
+      },
+      "expected": {
+        "rule_id": "1.21",
+        "raw_points": 5,
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "rationale": "Rule 1.21 Basic swimming proficiency = 5 points flat"
+      }
+    },
+    {
+      "id": "GOLDEN-G1-11",
+      "group": "I",
+      "facts": {
+        "certificate_id": "GOLDEN-G1-11",
+        "rule_id": "1.22",
+        "activity_title": "College Union Executive Committee Member",
+        "event_name": "College Union 2024-2025",
+        "organiser": "College Election Commission",
+        "level": "college",
+        "position": "Executive Committee Members (Excluding Office Bearers)",
+        "activity_date": "2024-09-15",
+        "academic_year": "2024-2025",
+        "semester": "S1",
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "student_asserted": false
+      },
+      "expected": {
+        "rule_id": "1.22",
+        "raw_points": 15,
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "rationale": "Rule 1.22 College union executive committee member = 15 points per Table 2"
+      }
+    },
+    {
+      "id": "GOLDEN-G2-01",
+      "group": "II",
+      "facts": {
+        "certificate_id": "GOLDEN-G2-01",
+        "rule_id": "2.1",
+        "activity_title": "State Tech Fest - Line Follower Robotics Participant",
+        "event_name": "Daksha 2025 State Tech Fest",
+        "organiser": "College of Engineering Trivandrum",
+        "level": "state",
+        "position": "Participation",
+        "activity_date": "2025-03-04",
+        "academic_year": "2024-2025",
+        "semester": "S2",
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "student_asserted": false
+      },
+      "expected": {
+        "rule_id": "2.1",
+        "raw_points": 10,
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "rationale": "Rule 2.1 State level tech-fest participation = 10 points"
+      }
+    },
+    {
+      "id": "GOLDEN-G2-02",
+      "group": "II",
+      "facts": {
+        "certificate_id": "GOLDEN-G2-02",
+        "rule_id": "2.2",
+        "activity_title": "National Tech Fest - Autonomous Drone Challenge 1st Prize",
+        "event_name": "Tathva 2024 National Tech Fest",
+        "organiser": "NIT Calicut",
+        "level": "national",
+        "position": "1st Prize",
+        "activity_date": "2024-10-26",
+        "academic_year": "2024-2025",
+        "semester": "S1",
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "student_asserted": false
+      },
+      "expected": {
+        "rule_id": "2.2",
+        "raw_points": 40,
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "rationale": "Rule 2.2 National level tech-fest winner = 40 points"
+      }
+    },
+    {
+      "id": "GOLDEN-G2-03",
+      "group": "II",
+      "facts": {
+        "certificate_id": "GOLDEN-G2-03",
+        "rule_id": "2.3",
+        "activity_title": "IEEE Student Branch Paper Presentation Participant",
+        "event_name": "IEEE Kerala Section Student Congress 2024",
+        "organiser": "IEEE Kerala Section",
+        "level": "international",
+        "position": "Participation",
+        "activity_date": "2024-12-14",
+        "academic_year": "2024-2025",
+        "semester": "S1",
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "student_asserted": false
+      },
+      "expected": {
+        "rule_id": "2.3",
+        "raw_points": 20,
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "rationale": "Rule 2.3 International professional society event participation = 20 points"
+      }
+    },
+    {
+      "id": "GOLDEN-G2-04",
+      "group": "II",
+      "facts": {
+        "certificate_id": "GOLDEN-G2-04",
+        "rule_id": "2.20",
+        "activity_title": "Short-Term Industrial Internship at Keltron (2 Weeks)",
+        "event_name": "Industrial Training & Clinical Exposure",
+        "organiser": "Keltron Controls Aroor",
+        "level": "college",
+        "duration_days": 12,
+        "activity_date": "2024-12-28",
+        "academic_year": "2024-2025",
+        "semester": "S1",
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "student_asserted": false
+      },
+      "expected": {
+        "rule_id": "2.20",
+        "raw_points": 10,
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "rationale": "Rule 2.20 Short-term internship (minimum 10 working days) = 10 points flat"
+      }
+    },
+    {
+      "id": "GOLDEN-G2-05",
+      "group": "II",
+      "facts": {
+        "certificate_id": "GOLDEN-G2-05",
+        "rule_id": "2.21",
+        "activity_title": "IELTS Academic Test Result Form - Overall Band 7.5",
+        "event_name": "IELTS Academic Examination",
+        "organiser": "IDP Education",
+        "level": "international",
+        "score_value": "7.5",
+        "activity_date": "2025-01-22",
+        "academic_year": "2024-2025",
+        "semester": "S2",
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "student_asserted": false
+      },
+      "expected": {
+        "rule_id": "2.21",
+        "raw_points": 30,
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "rationale": "Rule 2.21 IELTS Academic band >= 7.5 = 30 points"
+      }
+    },
+    {
+      "id": "GOLDEN-G2-06",
+      "group": "II",
+      "facts": {
+        "certificate_id": "GOLDEN-G2-06",
+        "rule_id": "2.21",
+        "activity_title": "TOEFL iBT Score Report - Total 102",
+        "event_name": "TOEFL iBT Test",
+        "organiser": "Educational Testing Service (ETS)",
+        "level": "international",
+        "score_value": "102",
+        "activity_date": "2025-02-10",
+        "academic_year": "2024-2025",
+        "semester": "S2",
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "student_asserted": false
+      },
+      "expected": {
+        "rule_id": "2.21",
+        "raw_points": 25,
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "rationale": "Rule 2.21 TOEFL iBT score between 95 and 104 = 25 points"
+      }
+    },
+    {
+      "id": "GOLDEN-G2-07",
+      "group": "II",
+      "facts": {
+        "certificate_id": "GOLDEN-G2-07",
+        "rule_id": "2.22",
+        "activity_title": "GATE 2025 Scorecard - All India Rank 4200",
+        "event_name": "Graduate Aptitude Test in Engineering 2025",
+        "organiser": "IIT Roorkee / GATE Organising Committee",
+        "level": "national",
+        "score_value": "4200",
+        "activity_date": "2025-03-16",
+        "academic_year": "2024-2025",
+        "semester": "S2",
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "student_asserted": false
+      },
+      "expected": {
+        "rule_id": "2.22",
+        "raw_points": 30,
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "rationale": "Rule 2.22 GATE AIR <= 5000 = 30 points"
+      }
+    },
+    {
+      "id": "GOLDEN-G3-01",
+      "group": "III",
+      "facts": {
+        "certificate_id": "GOLDEN-G3-01",
+        "rule_id": "3.3",
+        "activity_title": "Long-Term Industrial Internship at Bosch Global Software (4 Months)",
+        "event_name": "KTU Approved Long-Term Internship",
+        "organiser": "Bosch Global Software Technologies",
+        "level": "national",
+        "duration_months": "4.0",
+        "activity_date": "2025-04-30",
+        "academic_year": "2024-2025",
+        "semester": "S2",
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "student_asserted": false
+      },
+      "expected": {
+        "rule_id": "3.3",
+        "raw_points": 15,
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "rationale": "Rule 3.3 Long-term internship >= 3.5 months = 15 points flat per Table 2 row 3.3"
+      }
+    },
+    {
+      "id": "GOLDEN-G3-02",
+      "group": "III",
+      "facts": {
+        "certificate_id": "GOLDEN-G3-02",
+        "rule_id": "3.8",
+        "activity_title": "Working FOSS Solution Innovation Certified by ICFOSS",
+        "event_name": "ICFOSS Open Source Innovation Showcase",
+        "organiser": "International Centre for Free and Open Source Software (ICFOSS)",
+        "level": "state",
+        "activity_date": "2025-02-18",
+        "academic_year": "2024-2025",
+        "semester": "S2",
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "student_asserted": false
+      },
+      "expected": {
+        "rule_id": "3.8",
+        "raw_points": 25,
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "rationale": "Rule 3.8 ICFOSS certified working FOSS solution = 25 points flat per Table 2 row 3.8"
+      }
+    },
+    {
+      "id": "GOLDEN-G3-03",
+      "group": "III",
+      "facts": {
+        "certificate_id": "GOLDEN-G3-03",
+        "rule_id": "3.9",
+        "activity_title": "Start-up Registration Certificate under MSME / KSUM",
+        "event_name": "Udyam Registration & KSUM Startup Recognition",
+        "organiser": "Ministry of Micro, Small and Medium Enterprises (MSME)",
+        "level": "national",
+        "activity_date": "2024-11-12",
+        "academic_year": "2024-2025",
+        "semester": "S1",
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "student_asserted": false
+      },
+      "expected": {
+        "rule_id": "3.9",
+        "raw_points": 30,
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "rationale": "Rule 3.9 Legally registered startup company = 30 points flat"
+      }
+    },
+    {
+      "id": "GOLDEN-G3-04",
+      "group": "III",
+      "facts": {
+        "certificate_id": "GOLDEN-G3-04",
+        "rule_id": "3.10",
+        "activity_title": "Patent Application Published in Indian Patent Office Official Journal",
+        "event_name": "IPO Patent Publication",
+        "organiser": "Indian Patent Office (IPO)",
+        "level": "national",
+        "position": "Patent Published",
+        "activity_date": "2025-01-25",
+        "academic_year": "2024-2025",
+        "semester": "S2",
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "student_asserted": false
+      },
+      "expected": {
+        "rule_id": "3.10",
+        "raw_points": 30,
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "rationale": "Rule 3.10 Patent published in official journal = 30 points"
+      }
+    },
+    {
+      "id": "GOLDEN-G3-05",
+      "group": "III",
+      "facts": {
+        "certificate_id": "GOLDEN-G3-05",
+        "rule_id": "3.11.1",
+        "activity_title": "Prototype Development & Performance Testing Validated by IEDC",
+        "event_name": "Prototype Validation Drive 2025",
+        "organiser": "Innovation and Entrepreneurship Development Centre (IEDC)",
+        "level": "college",
+        "activity_date": "2025-03-10",
+        "academic_year": "2024-2025",
+        "semester": "S2",
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "student_asserted": false
+      },
+      "expected": {
+        "rule_id": "3.11.1",
+        "raw_points": 40,
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "rationale": "Rule 3.11.1 Functional prototype development validated by Innovation Cell = 40 points per Table 2 row 3.11.1"
+      }
+    },
+    {
+      "id": "GOLDEN-G3-06",
+      "group": "III",
+      "facts": {
+        "certificate_id": "GOLDEN-G3-06",
+        "rule_id": "3.14",
+        "activity_title": "Research Paper Published in Scopus Q1 Journal",
+        "event_name": "IEEE Transactions on Industrial Informatics Publication",
+        "organiser": "IEEE Industrial Electronics Society",
+        "level": "international",
+        "position": "SCI/SCIE/Scopus Q1–Q2 Journals",
+        "activity_date": "2025-02-15",
+        "academic_year": "2024-2025",
+        "semester": "S2",
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "student_asserted": false
+      },
+      "expected": {
+        "rule_id": "3.14",
+        "raw_points": 40,
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "rationale": "Rule 3.14 Publication in Q1-Q2 Scopus indexed journal = 40 points"
+      }
+    },
+    {
+      "id": "GOLDEN-G3-07",
+      "group": "III",
+      "facts": {
+        "certificate_id": "GOLDEN-G3-07",
+        "rule_id": "3.15",
+        "activity_title": "Smart India Hackathon (SIH) 2024 - 1st Prize Winner",
+        "event_name": "Smart India Hackathon 2024 Grand Finale",
+        "organiser": "Ministry of Education Innovation Cell (MIC) & AICTE",
+        "level": "national",
+        "position": "1st Prize",
+        "activity_date": "2024-12-19",
+        "academic_year": "2024-2025",
+        "semester": "S1",
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "student_asserted": false
+      },
+      "expected": {
+        "rule_id": "3.15",
+        "raw_points": 40,
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "rationale": "Rule 3.15 National hackathon 1st prize = 40 points"
+      }
+    },
+    {
+      "id": "GOLDEN-G3-08",
+      "group": "III",
+      "facts": {
+        "certificate_id": "GOLDEN-G3-08",
+        "rule_id": "3.16",
+        "activity_title": "NASA International Space Apps Challenge - Global Finalist Participation",
+        "event_name": "NASA International Space Apps Challenge 2024",
+        "organiser": "NASA Space Apps Global Organizing Team",
+        "level": "international",
+        "position": "Participation",
+        "activity_date": "2024-10-06",
+        "academic_year": "2024-2025",
+        "semester": "S1",
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "student_asserted": false
+      },
+      "expected": {
+        "rule_id": "3.16",
+        "raw_points": 30,
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "rationale": "Rule 3.16 International hackathon participation = 30 points"
+      }
+    },
+    {
+      "id": "DOUBT-Q01",
+      "group": "I",
+      "facts": {
+        "certificate_id": "DOUBT-Q01",
+        "rule_id": "1.1",
+        "activity_title": "College Football Championship - Blurry Mobile Photo",
+        "event_name": "Annual Sports Meet 2024",
+        "organiser": "College Sports Club",
+        "level": "college",
+        "position": "Participation",
+        "activity_date": "2024-10-20",
+        "academic_year": "2024-2025",
+        "semester": "S1",
+        "verdict": "DOUBT",
+        "doubt_codes": ["Q-01"],
+        "student_asserted": true
+      },
+      "expected": {
+        "rule_id": "1.1",
+        "raw_points": 1,
+        "verdict": "DOUBT",
+        "doubt_codes": ["Q-01"],
+        "rationale": "Blurry image / low OCR confidence fails allow-list predicate check_quality()"
+      }
+    },
+    {
+      "id": "DOUBT-E05",
+      "group": "I",
+      "facts": {
+        "certificate_id": "DOUBT-E05",
+        "rule_id": "1.14",
+        "activity_title": "State NSS Cell Appreciation Letter - Name Spelling Discrepancy",
+        "event_name": "NSS Flood Relief Commendation",
+        "organiser": "State NSS Cell Kerala",
+        "level": "state",
+        "activity_date": "2024-09-12",
+        "academic_year": "2024-2025",
+        "semester": "S1",
+        "verdict": "DOUBT",
+        "doubt_codes": ["E-05"],
+        "student_asserted": true
+      },
+      "expected": {
+        "rule_id": "1.14",
+        "raw_points": 15,
+        "verdict": "DOUBT",
+        "doubt_codes": ["E-05"],
+        "rationale": "Name on certificate ('Aravind K') does not match student profile ('Aravind Kumar') exactly"
+      }
+    },
+    {
+      "id": "DOUBT-E06",
+      "group": "II",
+      "facts": {
+        "certificate_id": "DOUBT-E06",
+        "rule_id": "2.3",
+        "activity_title": "Robotics Seminar with Ambiguous Date Format (04/05/2025)",
+        "event_name": "Robotics in Surgery Technical Symposium",
+        "organiser": "ASME Student Section",
+        "level": "national",
+        "position": "Participation",
+        "activity_date": "2025-04-05",
+        "academic_year": "2024-2025",
+        "semester": "S2",
+        "verdict": "DOUBT",
+        "doubt_codes": ["E-06"],
+        "student_asserted": true
+      },
+      "expected": {
+        "rule_id": "2.3",
+        "raw_points": 15,
+        "verdict": "DOUBT",
+        "doubt_codes": ["E-06"],
+        "rationale": "Date 04/05/2025 is ambiguous between April 5 and May 4, failing date certainty check"
+      }
+    },
+    {
+      "id": "DOUBT-R01",
+      "group": "I",
+      "facts": {
+        "certificate_id": "DOUBT-R01",
+        "rule_id": "1.5",
+        "activity_title": "Driving License Issued Prior to University Admission",
+        "event_name": "Motor Vehicles Department License Issuance",
+        "organiser": "Motor Vehicles Department Kerala",
+        "level": "state",
+        "activity_date": "2023-04-10",
+        "academic_year": "2022-2023",
+        "semester": null,
+        "verdict": "DOUBT",
+        "doubt_codes": ["R-01"],
+        "student_asserted": true
+      },
+      "expected": {
+        "rule_id": "1.5",
+        "raw_points": 5,
+        "verdict": "DOUBT",
+        "doubt_codes": ["R-01"],
+        "rationale": "License issued before student admission date (August 1, 2024), violating handbook Rule vi"
+      }
+    },
+    {
+      "id": "DOUBT-R02",
+      "group": "III",
+      "facts": {
+        "certificate_id": "DOUBT-R02",
+        "rule_id": "3.3",
+        "activity_title": "Internship Completed After Programme End Date",
+        "event_name": "Graduate Engineering Internship",
+        "organiser": "Infosys Limited",
+        "level": "national",
+        "duration_months": "4.0",
+        "activity_date": "2028-10-15",
+        "academic_year": "2028-2029",
+        "semester": null,
+        "verdict": "DOUBT",
+        "doubt_codes": ["R-02"],
+        "student_asserted": true
+      },
+      "expected": {
+        "rule_id": "3.3",
+        "raw_points": 15,
+        "verdict": "DOUBT",
+        "doubt_codes": ["R-02"],
+        "rationale": "Certificate activity date is after programme completion date (July 31, 2028), violating Rule vi"
+      }
+    },
+    {
+      "id": "DOUBT-R03",
+      "group": "II",
+      "facts": {
+        "certificate_id": "DOUBT-R03",
+        "rule_id": "2.20",
+        "activity_title": "Short-Term Internship Lasting Only 5 Days (Insufficient Duration)",
+        "event_name": "Industrial Familiarisation Training",
+        "organiser": "Kerala Minerals and Metals Ltd (KMML)",
+        "level": "college",
+        "duration_days": 5,
+        "activity_date": "2025-01-05",
+        "academic_year": "2024-2025",
+        "semester": "S2",
+        "verdict": "DOUBT",
+        "doubt_codes": ["R-03"],
+        "student_asserted": true
+      },
+      "expected": {
+        "rule_id": "2.20",
+        "raw_points": 10,
+        "verdict": "DOUBT",
+        "doubt_codes": ["R-03"],
+        "rationale": "Handbook rule 2.20 requires minimum 2 weeks or 10 working days; 5 days violates duration condition"
+      }
+    },
+    {
+      "id": "DOUBT-R04",
+      "group": "III",
+      "facts": {
+        "certificate_id": "DOUBT-R04",
+        "rule_id": "3.17",
+        "activity_title": "Python Bootcamp from Unapproved Private Online Academy",
+        "event_name": "Online Web Development Course",
+        "organiser": "Generic Private EdTech LLC",
+        "level": "college",
+        "duration_hours": 30,
+        "activity_date": "2024-11-20",
+        "academic_year": "2024-2025",
+        "semester": "S1",
+        "verdict": "DOUBT",
+        "doubt_codes": ["R-04"],
+        "student_asserted": true
+      },
+      "expected": {
+        "rule_id": "3.17",
+        "raw_points": 30,
+        "verdict": "DOUBT",
+        "doubt_codes": ["R-04"],
+        "rationale": "Issuer is not on the KTU approved skilling list (SWAYAM/NPTEL/Spoken Tutorial), violating condition"
+      }
+    },
+    {
+      "id": "DOUBT-C01",
+      "group": "II",
+      "facts": {
+        "certificate_id": "DOUBT-C01",
+        "rule_id": "2.3",
+        "activity_title": "Paper Presentation on Edge AI - Subhead Ambiguous",
+        "event_name": "International Conference on Computing (ICC 2025)",
+        "organiser": "IEEE Kerala Section",
+        "level": "international",
+        "position": "Participation",
+        "activity_date": "2025-04-12",
+        "academic_year": "2024-2025",
+        "semester": "S2",
+        "verdict": "DOUBT",
+        "doubt_codes": ["C-01"],
+        "student_asserted": true
+      },
+      "expected": {
+        "rule_id": "2.3",
+        "raw_points": 20,
+        "verdict": "DOUBT",
+        "doubt_codes": ["C-01"],
+        "rationale": "Ambiguous whether event belongs to 2.3 (competitions) or 2.7 (paper presentation)"
+      }
+    },
+    {
+      "id": "DOUBT-C03",
+      "group": "I",
+      "facts": {
+        "certificate_id": "DOUBT-C03",
+        "rule_id": "1.1",
+        "activity_title": "District Athletic Meet - Ambiguous Tier Level",
+        "event_name": "District Senior Athletic Championship",
+        "organiser": "District Sports Association",
+        "level": "zonal",
+        "position": "Participation",
+        "activity_date": "2024-12-08",
+        "academic_year": "2024-2025",
+        "semester": "S1",
+        "verdict": "DOUBT",
+        "doubt_codes": ["C-03"],
+        "student_asserted": true
+      },
+      "expected": {
+        "rule_id": "1.1",
+        "raw_points": 5,
+        "verdict": "DOUBT",
+        "doubt_codes": ["C-03"],
+        "rationale": "District level is ambiguous with respect to KTU 'zonal' definition (Ambiguity A-15)"
+      }
+    },
+    {
+      "id": "DOUBT-V01",
+      "group": "I",
+      "facts": {
+        "certificate_id": "DOUBT-V01",
+        "rule_id": "1.8",
+        "activity_title": "Blood Donation Certificate Missing NSS Officer Signature",
+        "event_name": "College Blood Donation Drive",
+        "organiser": "Blood Bank Hospital",
+        "level": "college",
+        "activity_date": "2025-02-14",
+        "academic_year": "2024-2025",
+        "semester": "S2",
+        "verdict": "DOUBT",
+        "doubt_codes": ["V-01"],
+        "student_asserted": true
+      },
+      "expected": {
+        "rule_id": "1.8",
+        "raw_points": 5,
+        "verdict": "DOUBT",
+        "doubt_codes": ["V-01"],
+        "rationale": "Documentary evidence lacks required institutional counter-signature"
+      }
+    },
+    {
+      "id": "BOUNDARY-IELTS-6.5",
+      "group": "II",
+      "facts": {
+        "certificate_id": "BOUNDARY-IELTS-6.5",
+        "rule_id": "2.21",
+        "activity_title": "IELTS Academic Test - Band 6.5 (Minimum Tier)",
+        "event_name": "IELTS Academic",
+        "organiser": "British Council",
+        "level": "international",
+        "score_value": "6.5",
+        "activity_date": "2024-11-15",
+        "academic_year": "2024-2025",
+        "semester": "S1",
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "student_asserted": false
+      },
+      "expected": {
+        "rule_id": "2.21",
+        "raw_points": 20,
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "rationale": "IELTS Academic 6.5 is the exact lower boundary for 20 points"
+      }
+    },
+    {
+      "id": "BOUNDARY-GATE-5000",
+      "group": "II",
+      "facts": {
+        "certificate_id": "BOUNDARY-GATE-5000",
+        "rule_id": "2.22",
+        "activity_title": "GATE Examination - All India Rank 5000 (Boundary)",
+        "event_name": "GATE 2025",
+        "organiser": "IIT Roorkee",
+        "level": "national",
+        "score_value": "5000",
+        "activity_date": "2025-03-15",
+        "academic_year": "2024-2025",
+        "semester": "S2",
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "student_asserted": false
+      },
+      "expected": {
+        "rule_id": "2.22",
+        "raw_points": 30,
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "rationale": "GATE AIR 5000 is the exact boundary for highest tier (30 points)"
+      }
+    },
+    {
+      "id": "BOUNDARY-GATE-5001",
+      "group": "II",
+      "facts": {
+        "certificate_id": "BOUNDARY-GATE-5001",
+        "rule_id": "2.22",
+        "activity_title": "GATE Examination - All India Rank 5001 (Boundary Step-down)",
+        "event_name": "GATE 2025",
+        "organiser": "IIT Roorkee",
+        "level": "national",
+        "score_value": "5001",
+        "activity_date": "2025-03-15",
+        "academic_year": "2024-2025",
+        "semester": "S2",
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "student_asserted": false
+      },
+      "expected": {
+        "rule_id": "2.22",
+        "raw_points": 25,
+        "verdict": "VERIFIED",
+        "doubt_codes": [],
+        "rationale": "GATE AIR 5001 steps down to middle tier (25 points per Table 2 row 2.22)"
+      }
+    },
+    {
+      "id": "BOUNDARY-TOEFL-79",
+      "group": "II",
+      "facts": {
+        "certificate_id": "BOUNDARY-TOEFL-79",
+        "rule_id": "2.21",
+        "activity_title": "TOEFL iBT Test - Score 79 (Sub-threshold)",
+        "event_name": "TOEFL iBT",
+        "organiser": "ETS",
+        "level": "international",
+        "score_value": "79",
+        "activity_date": "2025-01-10",
+        "academic_year": "2024-2025",
+        "semester": "S2",
+        "verdict": "DOUBT",
+        "doubt_codes": ["C-03"],
+        "student_asserted": true
+      },
+      "expected": {
+        "rule_id": "2.21",
+        "raw_points": 0,
+        "verdict": "DOUBT",
+        "doubt_codes": ["C-03"],
+        "rationale": "TOEFL iBT minimum score requirement is 80; score 79 yields 0 points"
+      }
+    }
+  ]
+}

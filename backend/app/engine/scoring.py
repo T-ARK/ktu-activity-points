@@ -127,7 +127,9 @@ def score_tiered_score(fact: CertificateFacts, rule: dict[str, Any]) -> int:
             details = fact.score_details or {}
             qualified = bool(details.get("qualified", False))
             air = details.get("air")
-            if not qualified and not fact.score_value:
+            if air is None and fact.score_value is not None:
+                air = fact.score_value
+            if not qualified and air is None:
                 return 0
             if air is not None:
                 try:
@@ -175,19 +177,29 @@ def score_role_based(fact: CertificateFacts, rule: dict[str, Any]) -> int:
     if not isinstance(roles, list):
         return 0
 
-    target = (fact.role or fact.position or fact.activity_title).strip().lower()
+    target = (fact.role or fact.position or fact.activity_title or "").strip().lower()
+    if not target:
+        return 0
 
-    # Search for matching role entry
-    best_pts = 0
+    # 1. Exact match first
     for r in roles:
-        title = r.get("title", "").lower()
-        pts = r.get("points", 0)
-        # Exact or substring match
-        if target and (target in title or title in target):
-            if pts > best_pts:
-                best_pts = pts
+        title = r.get("title", "").strip().lower()
+        if target == title:
+            return int(r.get("points", 0))
 
-    return best_pts
+    # 2. Prefer most specific matching title (longest title length)
+    matches: list[tuple[int, int]] = []
+    for r in roles:
+        title = r.get("title", "").strip().lower()
+        pts = int(r.get("points", 0))
+        if target in title or title in target:
+            matches.append((len(title), pts))
+
+    if matches:
+        matches.sort(key=lambda x: x[0], reverse=True)
+        return matches[0][1]
+
+    return 0
 
 
 def score_milestone_based(fact: CertificateFacts, rule: dict[str, Any]) -> int:
@@ -196,17 +208,29 @@ def score_milestone_based(fact: CertificateFacts, rule: dict[str, Any]) -> int:
     if not isinstance(milestones, list):
         return 0
 
-    target = (fact.position or fact.role or fact.activity_title).strip().lower()
+    target = (fact.position or fact.role or fact.activity_title or "").strip().lower()
+    if not target:
+        return 0
 
-    best_pts = 0
+    # 1. Exact match first
     for m in milestones:
-        title = m.get("title", "").lower()
-        pts = m.get("points", 0)
-        if target and (target in title or title in target):
-            if pts > best_pts:
-                best_pts = pts
+        title = m.get("title", "").strip().lower()
+        if target == title:
+            return int(m.get("points", 0))
 
-    return best_pts
+    # 2. Prefer most specific matching title (longest title length)
+    matches: list[tuple[int, int]] = []
+    for m in milestones:
+        title = m.get("title", "").strip().lower()
+        pts = int(m.get("points", 0))
+        if target in title or title in target:
+            matches.append((len(title), pts))
+
+    if matches:
+        matches.sort(key=lambda x: x[0], reverse=True)
+        return matches[0][1]
+
+    return 0
 
 
 def calculate_raw_points(fact: CertificateFacts, rule: dict[str, Any]) -> int:

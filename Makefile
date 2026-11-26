@@ -33,17 +33,17 @@ lint:
 	@echo "==> Running ruff lint and format check..."
 	@$(RUFF) check .
 	@echo "==> Running mypy strict type check on scripts & backend..."
-	@$(MYPY) --strict scripts/rules_check.py
+	@MYPYPATH=backend $(MYPY) --strict scripts/rules_check.py scripts/test_accuracy.py
 	@if find backend/app -name "*.py" 2>/dev/null | grep -q .; then $(MYPY) --strict backend/app; fi
 
 test:
 	@echo "==> Running pytest test suite (unit + property)..."
-	@$(PYTEST) -v backend/tests/unit backend/tests/property
+	@PYTHONPATH=backend $(PYTEST) -v backend/tests/unit backend/tests/property
 
 test-golden:
 	@echo "==> Running golden & adversarial test suite..."
 	@if [ -d backend/tests/golden ] && [ "$$(ls -A backend/tests/golden)" ]; then \
-		$(PYTEST) -v backend/tests/golden backend/tests/adversarial; \
+		PYTHONPATH=backend $(PYTEST) -v backend/tests/golden backend/tests/adversarial && $(PYTHON) scripts/test_accuracy.py; \
 	else \
 		echo "    [Phase 0 Stub] Golden tests will activate in Phase 2/3."; \
 	fi

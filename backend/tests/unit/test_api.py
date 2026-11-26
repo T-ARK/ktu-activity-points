@@ -64,7 +64,7 @@ def test_activities_and_dashboard():
     # Load sample
     sample_res = client.post("/api/activities/load-sample")
     assert sample_res.status_code == 200
-    assert len(sample_res.json()) == 8
+    assert len(sample_res.json()) == 9
 
     # Check dashboard evaluation
     dash_res = client.get("/api/dashboard")

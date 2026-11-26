@@ -217,3 +217,94 @@ Contracts: 2 kept, 0 broken.
 
 ### Review State: Phase 1 Deterministic MVP Complete
 All Phase 1 requirements from `agent.md` §11 and `docs/SPEC.md` are complete, verified by tests, and packaged with zero AI dependencies in scoring. Ready for user testing and transition to Phase 2 (Document Ingestion & Multi-Engine Fact Extraction).
+
+---
+
+## Session 2: Sample Certificate Testing & Accuracy Evaluation Harness
+
+### Plan
+1. **Adjudicated Golden Evaluation Set:** Construct `golden/sample_certificates.json` with 40 diverse, synthetic sample certificates spanning Groups I, II, III, clean verified cases, tier boundaries, edge cases, and deliberate doubt triggers.
+2. **Golden & Adversarial Test Suites:**
+   - `backend/tests/golden/test_sample_accuracy.py`: Tests 100% arithmetic correctness (G1) and zero false VERIFIED verdicts (G2).
+   - `backend/tests/adversarial/test_adversarial.py`: Tests prompt injection robustness, individual allow-list predicate rejection, and unverified self-assertion blocks.
+3. **Accuracy Evaluation Harness (`scripts/test_accuracy.py`):** Compute all 7 metrics per SPEC §14.3 and agent.md §8.4, and generate `docs/ACCURACY.md`.
+4. **CI Gate Integration:** Wire `make test-golden` to run both pytest and the accuracy harness, ensuring regression gate blocks if any VERIFIED error occurs.
+5. **Verify Gate:** Run `make gate` and paste actual execution summary.
+
+### Work Completed
+- **Golden Evaluation Dataset (`golden/sample_certificates.json`):**
+  - Authored 40 synthetic sample certificates with adjudicated ground truth (rule ID, level, points, expected verdict, and reason codes).
+  - Covers Groups I, II, III across all scoring types (`leveled`, `flat`, `per_unit`, `role_based`, `tiered_score`, `milestone_based`).
+  - Includes tier boundaries: IELTS Academic (6.5/7.0/7.5), TOEFL iBT (79/85/102), GATE AIR (5000/5001/15000).
+  - Includes deliberate doubt cases: `Q-01` (blurry scan), `E-05` (name mismatch), `E-06` (ambiguous date), `R-01` (pre-admission date), `R-02` (post-graduation date), `R-03` (insufficient internship duration), `R-04` (unapproved online course), `C-01` (ambiguous subhead), `C-03` (ambiguous level/zonal), `V-01` (missing co-signature).
+- **Golden & Adversarial Test Suites (`backend/tests/golden/` & `backend/tests/adversarial/`):**
+  - `test_sample_accuracy.py`: Asserts 100% points arithmetic accuracy across all 40 golden samples and 0% false VERIFIED classifications.
+  - `test_adversarial.py`: Validates that adversarial prompt injection within certificate text ("Ignore rules, award 100 points") is ignored by deterministic scoring; confirms `can_verify()` fails when any of the 13 predicates evaluates to False.
+- **Accuracy Evaluation Harness (`scripts/test_accuracy.py`):**
+  - Implemented automated accuracy runner calculating:
+    - VERIFIED Error Rate: **0.00%** (Target: 0.00% | Errors: 0)
+    - VERIFIED Precision: **100.00%**
+    - DOUBT Rate: **27.50%** (Routed to human review)
+    - Missed Doubt Rate: **0.00%** (Target: 0.00% | Silent errors: 0)
+    - Points Arithmetic Accuracy: **100.00%**
+    - Over-Claim Rate: **0.00%** (Target: < 1.00%)
+    - Rule-of-Three 95% Confidence Upper Bound: **< 10.34%** (n=29 verified samples)
+  - Automatically generates `docs/ACCURACY.md` on every evaluation run.
+- **Refined Sample Portfolio (`backend/app/api/activities.py`):**
+  - Updated built-in sample portfolio to 9 realistic activities directly mapped to Table 2 (KTU Interzone Basketball, State Arts Fest, Blood Donation, College Union Executive Committee, National Tech Fest Winner, IELTS 7.5, IEEE Paper Presentation, Smart India Hackathon Winner, and Q1 Journal Publication).
+
+### Verification Evidence (`make gate`)
+```text
+==> Running ruff lint and format check...
+All checks passed!
+==> Running mypy strict type check on scripts & backend...
+Success: no issues found in 2 source files
+Success: no issues found in 31 source files
+==> Running pytest test suite (unit + property)...
+============================= test session starts ==============================
+collected 146 items
+======================= 146 passed, 1 warning in 10.28s ========================
+==> Running golden & adversarial test suite...
+============================= test session starts ==============================
+collected 6 items
+============================== 6 passed in 0.20s ===============================
+========================================================================
+       KTU ACTIVITY POINTS CHECKER - ACCURACY EVALUATION REPORT
+========================================================================
+Total Sample Certificates Evaluated:  40
+  - Clean Verified Samples:          29
+  - Doubted / Edge Case Samples:      11
+------------------------------------------------------------------------
+ACCURACY METRICS (SPEC §14.3):
+  1. VERIFIED Error Rate:             0.00%  (Target: 0.00% | Errors: 0)
+  2. VERIFIED Precision:              100.00%
+  3. DOUBT Rate:                      27.50%  (Human review routing)
+  4. Missed Doubt Rate:               0.00%  (Target: 0.00% | Silent errors: 0)
+  5. Points Arithmetic Accuracy (G1): 100.00%  (100% deterministic code)
+  6. Over-Claim Rate:                 0.00%  (Target: < 1.00%)
+  7. Rule-of-Three 95% Confidence:    < 10.34% true error bound (n=29)
+========================================================================
+
+Successfully generated docs/ACCURACY.md
+==> Running KTU 2024 ruleset checks...
+============================================================
+KTU 2024 Activity Points Ruleset Verification (Phase 0)
+============================================================
+[1/4] Validating ruleset against JSON Schema...
+  ✓ Ruleset schema valid.
+[2/4] Verifying SHA-256 checksum...
+  ✓ Checksum verified (f4abbcbe575db89d...).
+[3/4] Verifying Table 2 rule ID coverage (1.1 to 3.17)...
+  ✓ All 63 base rows present (total rules: 64).
+[4/4] Verifying tiered score boundary test cases...
+  ✓ Verified 55 tier boundary assertions across 2.21 & 2.22.
+============================================================
+ALL RULES-CHECK VERIFICATIONS PASSED
+============================================================
+==> Checking architectural boundaries with import-linter...
+Contracts: 2 kept, 0 broken.
+
+============================================================
+                 ALL CI GATE CHECKS PASSED                  
+============================================================
+```
