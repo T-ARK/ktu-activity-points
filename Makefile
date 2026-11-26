@@ -37,8 +37,8 @@ lint:
 	@if find backend/app -name "*.py" 2>/dev/null | grep -q .; then $(MYPY) --strict backend/app; fi
 
 test:
-	@echo "==> Running pytest test suite..."
-	@$(PYTEST) -v backend/tests/unit
+	@echo "==> Running pytest test suite (unit + property)..."
+	@$(PYTEST) -v backend/tests/unit backend/tests/property
 
 test-golden:
 	@echo "==> Running golden & adversarial test suite..."

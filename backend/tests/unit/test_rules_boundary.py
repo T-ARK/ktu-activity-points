@@ -125,7 +125,7 @@ class TestAptitudeProficiencyTiers:
         [
             ({"qualified": False, "air": None}, 0),
             ({"qualified": False, "air": 100}, 0),  # Not qualified
-            ({"qualified": True, "air": None}, 20),   # Qualified with valid score
+            ({"qualified": True, "air": None}, 20),  # Qualified with valid score
             ({"qualified": True, "air": 25000}, 20),
             ({"qualified": True, "air": 15001}, 20),
             ({"qualified": True, "air": 15000}, 25),

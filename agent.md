@@ -213,12 +213,23 @@ Pure, deterministic, order-independent (shuffle the input → identical output; 
 
 ```python
 def can_verify(r: CertificateAnalysis) -> bool:
-    return all([
-        r.quality_ok, r.fields_grounded, r.extractors_agree, r.name_exact_match,
-        r.date_certain, r.date_in_study_period, r.exactly_one_rule_candidate,
-        r.issuer_accepted, r.duration_ok_or_not_required, r.cosign_ok_or_not_required,
-        r.approved_list_ok_or_not_required, r.no_ambiguity_flag, r.no_open_doubts,
-    ])
+    return all(
+        [
+            r.quality_ok,
+            r.fields_grounded,
+            r.extractors_agree,
+            r.name_exact_match,
+            r.date_certain,
+            r.date_in_study_period,
+            r.exactly_one_rule_candidate,
+            r.issuer_accepted,
+            r.duration_ok_or_not_required,
+            r.cosign_ok_or_not_required,
+            r.approved_list_ok_or_not_required,
+            r.no_ambiguity_flag,
+            r.no_open_doubts,
+        ]
+    )
 ```
 
 - Every predicate is a named, separately tested check.

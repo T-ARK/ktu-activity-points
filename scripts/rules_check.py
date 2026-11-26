@@ -24,16 +24,71 @@ CHECKSUM_PATH = REPO_ROOT / "rulesets" / "ktu-2024-v1.sha256"
 
 EXPECTED_BASE_IDS = [
     # Group I
-    "1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "1.8", "1.9", "1.10",
-    "1.11", "1.12", "1.13", "1.14", "1.15", "1.16", "1.17", "1.18", "1.19",
-    "1.20", "1.21", "1.22", "1.23", "1.24",
+    "1.1",
+    "1.2",
+    "1.3",
+    "1.4",
+    "1.5",
+    "1.6",
+    "1.7",
+    "1.8",
+    "1.9",
+    "1.10",
+    "1.11",
+    "1.12",
+    "1.13",
+    "1.14",
+    "1.15",
+    "1.16",
+    "1.17",
+    "1.18",
+    "1.19",
+    "1.20",
+    "1.21",
+    "1.22",
+    "1.23",
+    "1.24",
     # Group II
-    "2.1", "2.2", "2.3", "2.4", "2.5", "2.6", "2.7", "2.8", "2.9", "2.10",
-    "2.11", "2.12", "2.13", "2.14", "2.15", "2.16", "2.17", "2.18", "2.19",
-    "2.20", "2.21", "2.22",
+    "2.1",
+    "2.2",
+    "2.3",
+    "2.4",
+    "2.5",
+    "2.6",
+    "2.7",
+    "2.8",
+    "2.9",
+    "2.10",
+    "2.11",
+    "2.12",
+    "2.13",
+    "2.14",
+    "2.15",
+    "2.16",
+    "2.17",
+    "2.18",
+    "2.19",
+    "2.20",
+    "2.21",
+    "2.22",
     # Group III
-    "3.1", "3.2", "3.3", "3.4", "3.5", "3.6", "3.7", "3.8", "3.9", "3.10",
-    "3.11", "3.12", "3.13", "3.14", "3.15", "3.16", "3.17"
+    "3.1",
+    "3.2",
+    "3.3",
+    "3.4",
+    "3.5",
+    "3.6",
+    "3.7",
+    "3.8",
+    "3.9",
+    "3.10",
+    "3.11",
+    "3.12",
+    "3.13",
+    "3.14",
+    "3.15",
+    "3.16",
+    "3.17",
 ]
 
 # Tier boundary test specifications required by agent.md §8.1
@@ -238,7 +293,9 @@ def check_coverage(ruleset_data: dict[str, Any]) -> None:
     missing = []
     for expected in EXPECTED_BASE_IDS:
         if expected == "3.11":
-            if "3.11" not in found_ids and not ("3.11.1" in found_ids and "3.11.2" in found_ids):
+            if "3.11" not in found_ids and not (
+                "3.11.1" in found_ids and "3.11.2" in found_ids
+            ):
                 missing.append(expected)
         elif expected not in found_ids:
             missing.append(expected)
@@ -246,7 +303,9 @@ def check_coverage(ruleset_data: dict[str, Any]) -> None:
     if missing:
         print(f"  ERROR: Missing expected rule IDs: {missing}")
         sys.exit(1)
-    print(f"  ✓ All {len(EXPECTED_BASE_IDS)} base rows present (total rules: {len(found_ids)}).")
+    print(
+        f"  ✓ All {len(EXPECTED_BASE_IDS)} base rows present (total rules: {len(found_ids)})."
+    )
 
 
 def check_tier_boundaries(ruleset_data: dict[str, Any]) -> None:
@@ -266,7 +325,9 @@ def check_tier_boundaries(ruleset_data: dict[str, Any]) -> None:
 
         for test_name, cases in tests_dict.items():
             for score_input, expected_points in cases:
-                actual = evaluate_tier_score(rule_id, test_name, score_input, tests_config)
+                actual = evaluate_tier_score(
+                    rule_id, test_name, score_input, tests_config
+                )
                 if actual != expected_points:
                     print(
                         f"  ERROR: Tier boundary failure for {rule_id} {test_name} input={score_input}: "
@@ -275,7 +336,9 @@ def check_tier_boundaries(ruleset_data: dict[str, Any]) -> None:
                     sys.exit(1)
                 total_boundary_checks += 1
 
-    print(f"  ✓ Verified {total_boundary_checks} tier boundary assertions across 2.21 & 2.22.")
+    print(
+        f"  ✓ Verified {total_boundary_checks} tier boundary assertions across 2.21 & 2.22."
+    )
 
 
 def main() -> None:
