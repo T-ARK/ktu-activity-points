@@ -1,0 +1,223 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ktu.edu.in/schemas/ruleset-2024.json",
+  "title": "KTU Activity Points Ruleset Schema",
+  "description": "Schema for machine-readable KTU Activity Points rulesets (2024 Scheme).",
+  "type": "object",
+  "required": [
+    "ruleset_id",
+    "source",
+    "version",
+    "requirements",
+    "levels",
+    "rules"
+  ],
+  "properties": {
+    "ruleset_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "source": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "requirements": {
+      "type": "object",
+      "required": ["regular", "lateral", "pwd"],
+      "properties": {
+        "regular": {
+          "type": "object",
+          "required": ["total", "per_group"],
+          "properties": {
+            "total": { "type": "integer", "const": 120 },
+            "per_group": { "type": "integer", "const": 40 }
+          },
+          "additionalProperties": false
+        },
+        "lateral": {
+          "type": "object",
+          "required": ["total", "per_group"],
+          "properties": {
+            "total": { "type": "integer", "const": 90 },
+            "per_group": { "type": "integer", "const": 30 }
+          },
+          "additionalProperties": false
+        },
+        "pwd": {
+          "type": "object",
+          "required": ["total", "per_group"],
+          "properties": {
+            "total": { "type": "integer", "const": 60 },
+            "per_group": { "type": "integer", "const": 20 }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "levels": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["college", "zonal", "state", "national", "international"]
+      },
+      "minItems": 5,
+      "maxItems": 5
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "group",
+          "major_head",
+          "sub_activity_head",
+          "kind",
+          "handbook_page",
+          "handbook_page_pdf",
+          "documentary_evidence",
+          "evidence_issuers",
+          "conditions",
+          "auto_class"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[1-3]\\.[0-9]+(\\.[0-9]+)?$"
+          },
+          "group": {
+            "type": "string",
+            "enum": ["I", "II", "III"]
+          },
+          "major_head": {
+            "type": "string"
+          },
+          "sub_activity_head": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "leveled",
+              "flat",
+              "per_unit",
+              "tiered_score",
+              "role_based",
+              "milestone_based",
+              "manual"
+            ]
+          },
+          "handbook_page": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 22
+          },
+          "handbook_page_pdf": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 22
+          },
+          "points": {
+            "oneOf": [
+              {
+                "type": "integer",
+                "minimum": 0
+              },
+              {
+                "type": "object",
+                "description": "Leveled points dictionary",
+                "properties": {
+                  "college": { "type": "integer", "minimum": 0 },
+                  "zonal": { "type": "integer", "minimum": 0 },
+                  "state": { "type": "integer", "minimum": 0 },
+                  "national": { "type": "integer", "minimum": 0 },
+                  "international": { "type": "integer", "minimum": 0 }
+                },
+                "required": ["college", "zonal", "state", "national", "international"],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "description": "Per unit points structure",
+                "properties": {
+                  "per": { "type": "string" },
+                  "points_each": { "type": "integer", "minimum": 1 },
+                  "max_units_per_year": { "type": "integer" },
+                  "max_units_per_semester": { "type": "integer" }
+                },
+                "required": ["per", "points_each"],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "description": "Tiered score tests map",
+                "properties": {
+                  "tests": { "type": "object" }
+                },
+                "required": ["tests"],
+                "additionalProperties": false
+              },
+              {
+                "type": "array",
+                "description": "Role-based or milestone-based list",
+                "items": {
+                  "type": "object",
+                  "required": ["title", "points"],
+                  "properties": {
+                    "title": { "type": "string" },
+                    "points": { "type": "integer", "minimum": 0 },
+                    "details": { "type": "string" },
+                    "unit": { "type": "string" }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            ]
+          },
+          "documentary_evidence": {
+            "type": "string"
+          },
+          "evidence_issuers": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "conditions": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "cap_subhead": {
+            "type": ["integer", "null"],
+            "minimum": 1
+          },
+          "cap_category": {
+            "type": ["integer", "null"],
+            "minimum": 1
+          },
+          "shared_cap_id": {
+            "type": ["string", "null"]
+          },
+          "shared_cap_max": {
+            "type": ["integer", "null"]
+          },
+          "auto_class": {
+            "type": "string",
+            "enum": ["A", "B", "A/B", "A/C", "C"]
+          },
+          "ambiguity_refs": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "remarks": {
+            "type": ["string", "null"]
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

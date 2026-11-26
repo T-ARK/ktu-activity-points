@@ -1,0 +1,2151 @@
+{
+  "ruleset_id": "ktu-2024-v1",
+  "source": "APJ Abdul Kalam Technological University Activity Points Handbook - 2024 Scheme",
+  "version": "1.0.0",
+  "requirements": {
+    "regular": {
+      "total": 120,
+      "per_group": 40
+    },
+    "lateral": {
+      "total": 90,
+      "per_group": 30
+    },
+    "pwd": {
+      "total": 60,
+      "per_group": 20
+    }
+  },
+  "levels": [
+    "college",
+    "zonal",
+    "state",
+    "national",
+    "international"
+  ],
+  "rules": [
+    {
+      "id": "1.1",
+      "group": "I",
+      "major_head": "Sports, Arts & Cultural Activities",
+      "sub_activity_head": "Sports/Games/Arts (Participation)",
+      "kind": "leveled",
+      "handbook_page": 3,
+      "handbook_page_pdf": 6,
+      "points": {
+        "college": 1,
+        "zonal": 5,
+        "state": 10,
+        "national": 20,
+        "international": 40
+      },
+      "documentary_evidence": "Certificates issued by the hosting college, the University, the Dean (Student Affairs), the College Union Advisor, the staff-in-charge of the event, or recognized professional bodies.",
+      "evidence_issuers": [
+        "hosting_college",
+        "university",
+        "dean_student_affairs",
+        "college_union_advisor",
+        "staff_in_charge",
+        "recognized_professional_body"
+      ],
+      "conditions": {
+        "ktu_organized_or_approved": true
+      },
+      "cap_subhead": null,
+      "cap_category": null,
+      "shared_cap_id": null,
+      "shared_cap_max": null,
+      "auto_class": "A/B",
+      "ambiguity_refs": ["A-09", "A-15", "A-17"],
+      "remarks": "KTU Organized/Approved Events"
+    },
+    {
+      "id": "1.2",
+      "group": "I",
+      "major_head": "Sports, Arts & Cultural Activities",
+      "sub_activity_head": "Sports/Games/Arts (Winners-1,2 and 3) - Single Events",
+      "kind": "leveled",
+      "handbook_page": 3,
+      "handbook_page_pdf": 6,
+      "points": {
+        "college": 5,
+        "zonal": 10,
+        "state": 20,
+        "national": 40,
+        "international": 40
+      },
+      "documentary_evidence": "Certificates issued by the hosting college, the University, the Dean (Student Affairs), the College Union Advisor, the staff-in-charge of the event, or recognized professional bodies.",
+      "evidence_issuers": [
+        "hosting_college",
+        "university",
+        "dean_student_affairs",
+        "college_union_advisor",
+        "staff_in_charge",
+        "recognized_professional_body"
+      ],
+      "conditions": {
+        "ktu_organized_or_approved": true,
+        "position": ["1st", "2nd", "3rd"],
+        "event_type": "single"
+      },
+      "cap_subhead": null,
+      "cap_category": null,
+      "shared_cap_id": null,
+      "shared_cap_max": null,
+      "auto_class": "A",
+      "ambiguity_refs": ["A-09", "A-15", "A-17"],
+      "remarks": "KTU Organized/Approved Events"
+    },
+    {
+      "id": "1.3",
+      "group": "I",
+      "major_head": "Sports, Arts & Cultural Activities",
+      "sub_activity_head": "Sports/Games/Arts (Winners-1,2 and 3) - Group Events",
+      "kind": "leveled",
+      "handbook_page": 3,
+      "handbook_page_pdf": 6,
+      "points": {
+        "college": 3,
+        "zonal": 5,
+        "state": 15,
+        "national": 30,
+        "international": 40
+      },
+      "documentary_evidence": "Certificates issued by the hosting college, the University, the Dean (Student Affairs), the College Union Advisor, the staff-in-charge of the event, or recognized professional bodies.",
+      "evidence_issuers": [
+        "hosting_college",
+        "university",
+        "dean_student_affairs",
+        "college_union_advisor",
+        "staff_in_charge",
+        "recognized_professional_body"
+      ],
+      "conditions": {
+        "ktu_organized_or_approved": true,
+        "position": ["1st", "2nd", "3rd"],
+        "event_type": "group"
+      },
+      "cap_subhead": null,
+      "cap_category": null,
+      "shared_cap_id": null,
+      "shared_cap_max": null,
+      "auto_class": "A",
+      "ambiguity_refs": ["A-09", "A-15", "A-17"],
+      "remarks": "KTU Organized/Approved Events"
+    },
+    {
+      "id": "1.4",
+      "group": "I",
+      "major_head": "Sports, Arts & Cultural Activities",
+      "sub_activity_head": "Publication in College Magazine: Articles, essays, poems, technical notes, or creative writing published in the officially released College Magazine, approved by the Editorial Board / Staff Advisor.",
+      "kind": "per_unit",
+      "handbook_page": 3,
+      "handbook_page_pdf": 6,
+      "points": {
+        "per": "magazine_published_in_academic_year",
+        "points_each": 5,
+        "max_units_per_year": 1
+      },
+      "documentary_evidence": "copy of the publication or a certification from the Editorial Committee",
+      "evidence_issuers": [
+        "editorial_committee",
+        "college_magazine_editorial_board"
+      ],
+      "conditions": {
+        "approved_by_editorial_board_or_staff_advisor": true,
+        "max_points_per_magazine_per_year": 5
+      },
+      "cap_subhead": 20,
+      "cap_category": null,
+      "shared_cap_id": null,
+      "shared_cap_max": null,
+      "auto_class": "A/C",
+      "ambiguity_refs": [],
+      "remarks": "Limited to a maximum of 5 points per magazine published in an academic year. Maximum - 20 points"
+    },
+    {
+      "id": "1.5",
+      "group": "I",
+      "major_head": "Sports, Arts & Cultural Activities",
+      "sub_activity_head": "Four-wheeler license (The license must be obtained during the original programme duration to be eligible for Activity Points.)",
+      "kind": "flat",
+      "handbook_page": 3,
+      "handbook_page_pdf": 6,
+      "points": 5,
+      "documentary_evidence": "Copy of the Driving License (DL) clearly showing the issue date",
+      "evidence_issuers": [
+        "licensing_authority_rto"
+      ],
+      "conditions": {
+        "obtained_during_programme": true,
+        "license_type": "four_wheeler"
+      },
+      "cap_subhead": 5,
+      "cap_category": null,
+      "shared_cap_id": null,
+      "shared_cap_max": null,
+      "auto_class": "A/B",
+      "ambiguity_refs": [],
+      "remarks": "Maximum - 5 points"
+    },
+    {
+      "id": "1.6",
+      "group": "I",
+      "major_head": "Community Outreach and social initiatives",
+      "sub_activity_head": "Community Service & Allied Activities (Two Days): Special volunteer service in pandemics and natural disasters, including floods, droughts, epidemics, or relief operations. (Collection of funds/materials for the Relief Camp, etc.)",
+      "kind": "flat",
+      "handbook_page": 4,
+      "handbook_page_pdf": 7,
+      "points": 5,
+      "documentary_evidence": "Certificates issued by the NSS Programme Officer, the Faculty Coordinator of the activity, or authorized officials of Government departments, Local Bodies, or NGOs involved in conducting or supervising the activity.",
+      "evidence_issuers": [
+        "nss_programme_officer",
+        "faculty_coordinator",
+        "government_officials",
+        "local_bodies",
+        "ngos"
+      ],
+      "conditions": {
+        "min_duration_days": 2,
+        "activity_type": "special_volunteer_service"
+      },
+      "cap_subhead": 10,
+      "cap_category": null,
+      "shared_cap_id": "shared_community_service_1_6_1_7",
+      "shared_cap_max": 10,
+      "auto_class": "A",
+      "ambiguity_refs": ["A-06"],
+      "remarks": "Special volunteer service in pandemics and natural disasters... 5 Points. Maximum-10 points shared with 1.7"
+    },
+    {
+      "id": "1.7",
+      "group": "I",
+      "major_head": "Community Outreach and social initiatives",
+      "sub_activity_head": "Community Service & Allied Activities (Up to One Week): Special volunteer service in pandemics and natural disasters, including floods, droughts, epidemics, or relief operations. (Collection of funds/materials for the Relief Camp, etc.)",
+      "kind": "flat",
+      "handbook_page": 4,
+      "handbook_page_pdf": 7,
+      "points": 10,
+      "documentary_evidence": "Certificates issued by the NSS Programme Officer, the Faculty Coordinator of the activity, or authorized officials of Government departments, Local Bodies, or NGOs involved in conducting or supervising the activity.",
+      "evidence_issuers": [
+        "nss_programme_officer",
+        "faculty_coordinator",
+        "government_officials",
+        "local_bodies",
+        "ngos"
+      ],
+      "conditions": {
+        "min_duration_days": 3,
+        "max_duration_days": 7,
+        "activity_type": "special_volunteer_service"
+      },
+      "cap_subhead": 10,
+      "cap_category": null,
+      "shared_cap_id": "shared_community_service_1_6_1_7",
+      "shared_cap_max": 10,
+      "auto_class": "A",
+      "ambiguity_refs": ["A-06"],
+      "remarks": "Special volunteer service in pandemics and natural disasters... 10 Points. Maximum-10 points shared with 1.6"
+    },
+    {
+      "id": "1.8",
+      "group": "I",
+      "major_head": "Community Outreach and social initiatives",
+      "sub_activity_head": "Blood donation",
+      "kind": "per_unit",
+      "handbook_page": 4,
+      "handbook_page_pdf": 7,
+      "points": {
+        "per": "blood_donation",
+        "points_each": 5
+      },
+      "documentary_evidence": "Certificates issued by a Government Blood Bank, Medical College Blood Bank, District Hospital Blood Bank, or any hospital licensed by the State Blood Transfusion Council, and recommended by the NSS Programme Officers or the University NSS Cell.",
+      "evidence_issuers": [
+        "government_blood_bank",
+        "medical_college_blood_bank",
+        "district_hospital_blood_bank",
+        "licensed_hospital_blood_bank"
+      ],
+      "conditions": {
+        "co_signatory_or_recommendation_required": [
+          "nss_programme_officer",
+          "university_nss_cell"
+        ]
+      },
+      "cap_subhead": 10,
+      "cap_category": null,
+      "shared_cap_id": null,
+      "shared_cap_max": null,
+      "auto_class": "A/C",
+      "ambiguity_refs": [],
+      "remarks": "5 Points/ blood donation. Maximum-10 points"
+    },
+    {
+      "id": "1.9",
+      "group": "I",
+      "major_head": "Community Outreach and social initiatives",
+      "sub_activity_head": "THRIVE Project – Students who participate in the Tribal Higher Education and Interactive Venture for Excellence (THRIVE) project of the Government for a minimum of 5 days in a semester.",
+      "kind": "per_unit",
+      "handbook_page": 4,
+      "handbook_page_pdf": 7,
+      "points": {
+        "per": "semester",
+        "points_each": 10,
+        "max_units_per_semester": 1
+      },
+      "documentary_evidence": "Certificates issued by the authorized officials of Government departments, Local Bodies, or NGOs involved in conducting or supervising the activity.",
+      "evidence_issuers": [
+        "thrive_project_authority",
+        "government_departments",
+        "local_bodies"
+      ],
+      "conditions": {
+        "min_days_per_semester": 5
+      },
+      "cap_subhead": 20,
+      "cap_category": null,
+      "shared_cap_id": null,
+      "shared_cap_max": null,
+      "auto_class": "A/B",
+      "ambiguity_refs": [],
+      "remarks": "10 Points/Semester. Maximum - 20 points"
+    },
+    {
+      "id": "1.10",
+      "group": "I",
+      "major_head": "Community Outreach and social initiatives",
+      "sub_activity_head": "Tree planting done by students",
+      "kind": "flat",
+      "handbook_page": 4,
+      "handbook_page_pdf": 7,
+      "points": 5,
+      "documentary_evidence": "Tree geo-tagging certificate issued by the University NSS Cell",
+      "evidence_issuers": [
+        "university_nss_cell"
+      ],
+      "conditions": {
+        "geo_tagging_certificate": true
+      },
+      "cap_subhead": 5,
+      "cap_category": null,
+      "shared_cap_id": null,
+      "shared_cap_max": null,
+      "auto_class": "A",
+      "ambiguity_refs": [],
+      "remarks": "Maximum - 5 Points"
+    },
+    {
+      "id": "1.11",
+      "group": "I",
+      "major_head": "NSS/NCC",
+      "sub_activity_head": "NSS Volunteer who has successfully completed two years of volunteer ship as per the NSS Manual",
+      "kind": "flat",
+      "handbook_page": 4,
+      "handbook_page_pdf": 7,
+      "points": 30,
+      "documentary_evidence": "NSS Volunteership Certificate issued by the University NSS Cell",
+      "evidence_issuers": [
+        "university_nss_cell"
+      ],
+      "conditions": {
+        "min_service_years": 2,
+        "as_per_nss_manual": true
+      },
+      "cap_subhead": null,
+      "cap_category": 40,
+      "shared_cap_id": "shared_nss_ncc_category_1_11_1_19",
+      "shared_cap_max": 40,
+      "auto_class": "A",
+      "ambiguity_refs": ["A-09", "A-11"],
+      "remarks": "Maximum - 40 points for NSS/NCC category. Printed as 1. 1.11 in handbook."
+    },
+    {
+      "id": "1.12",
+      "group": "I",
+      "major_head": "NSS/NCC",
+      "sub_activity_head": "University level leadership camps (100 hours camp)",
+      "kind": "flat",
+      "handbook_page": 5,
+      "handbook_page_pdf": 8,
+      "points": 20,
+      "documentary_evidence": "Certificate issued by the University NSS Cell",
+      "evidence_issuers": [
+        "university_nss_cell"
+      ],
+      "conditions": {
+        "min_hours": 100,
+        "level": "university"
+      },
+      "cap_subhead": null,
+      "cap_category": 40,
+      "shared_cap_id": "shared_nss_ncc_category_1_11_1_19",
+      "shared_cap_max": 40,
+      "auto_class": "A",
+      "ambiguity_refs": ["A-09"],
+      "remarks": "Category Cap 40"
+    },
+    {
+      "id": "1.13",
+      "group": "I",
+      "major_head": "NSS/NCC",
+      "sub_activity_head": "Winners in state level NSS festival or State NSS meet or NSS competitions organized by State Government or State NSS cell (First, Second)",
+      "kind": "flat",
+      "handbook_page": 5,
+      "handbook_page_pdf": 8,
+      "points": 15,
+      "documentary_evidence": "Certificate issued by the University/State NSS Cell/ NCC Directorate",
+      "evidence_issuers": [
+        "university_nss_cell",
+        "state_nss_cell",
+        "ncc_directorate"
+      ],
+      "conditions": {
+        "position": ["1st", "2nd"],
+        "level": "state"
+      },
+      "cap_subhead": null,
+      "cap_category": 40,
+      "shared_cap_id": "shared_nss_ncc_category_1_11_1_19",
+      "shared_cap_max": 40,
+      "auto_class": "A",
+      "ambiguity_refs": ["A-09"],
+      "remarks": "Category Cap 40"
+    },
+    {
+      "id": "1.14",
+      "group": "I",
+      "major_head": "NSS/NCC",
+      "sub_activity_head": "Special Service Certificate or Appreciation issued by the State Government, the State NSS Cell, or the NCC Directorate for exceptional NSS/NCC activities.",
+      "kind": "flat",
+      "handbook_page": 5,
+      "handbook_page_pdf": 8,
+      "points": 15,
+      "documentary_evidence": "Certificate issued by the University/State NSS Cell/ NCC Directorate",
+      "evidence_issuers": [
+        "state_government",
+        "state_nss_cell",
+        "ncc_directorate"
+      ],
+      "conditions": {
+        "for_exceptional_activities": true
+      },
+      "cap_subhead": null,
+      "cap_category": 40,
+      "shared_cap_id": "shared_nss_ncc_category_1_11_1_19",
+      "shared_cap_max": 40,
+      "auto_class": "A",
+      "ambiguity_refs": ["A-09"],
+      "remarks": "Category Cap 40"
+    },
+    {
+      "id": "1.15",
+      "group": "I",
+      "major_head": "NSS/NCC",
+      "sub_activity_head": "Recipient of State awards/National level awards",
+      "kind": "role_based",
+      "handbook_page": 5,
+      "handbook_page_pdf": 8,
+      "points": [
+        {
+          "title": "State awards",
+          "points": 15
+        },
+        {
+          "title": "National level awards",
+          "points": 25
+        }
+      ],
+      "documentary_evidence": "Certificate issued by the University/State NSS Cell/ NCC Directorate",
+      "evidence_issuers": [
+        "state_government",
+        "central_government",
+        "university_nss_cell",
+        "ncc_directorate"
+      ],
+      "conditions": {
+        "award_level": ["state", "national"]
+      },
+      "cap_subhead": null,
+      "cap_category": 40,
+      "shared_cap_id": "shared_nss_ncc_category_1_11_1_19",
+      "shared_cap_max": 40,
+      "auto_class": "A",
+      "ambiguity_refs": ["A-09"],
+      "remarks": "State awards-15 Points, National level awards-25 Points. Category Cap 40"
+    },
+    {
+      "id": "1.16",
+      "group": "I",
+      "major_head": "NSS/NCC",
+      "sub_activity_head": "Attending Approved National Camps/NIC/NYF/Pre.RDC",
+      "kind": "flat",
+      "handbook_page": 5,
+      "handbook_page_pdf": 8,
+      "points": 15,
+      "documentary_evidence": "Certificate issued by the University/State NSS Cell/ NCC Directorate",
+      "evidence_issuers": [
+        "university_nss_cell",
+        "state_nss_cell",
+        "ncc_directorate"
+      ],
+      "conditions": {
+        "approved_national_camps": true
+      },
+      "cap_subhead": null,
+      "cap_category": 40,
+      "shared_cap_id": "shared_nss_ncc_category_1_11_1_19",
+      "shared_cap_max": 40,
+      "auto_class": "A",
+      "ambiguity_refs": ["A-09"],
+      "remarks": "Category Cap 40"
+    },
+    {
+      "id": "1.17",
+      "group": "I",
+      "major_head": "NSS/NCC",
+      "sub_activity_head": "Ten days minimum volunteer service (50 hours) in official programme of the State or in special projects initiated by state government/State NSS/NCC Directorate",
+      "kind": "flat",
+      "handbook_page": 5,
+      "handbook_page_pdf": 8,
+      "points": 15,
+      "documentary_evidence": "Certificate issued by the University/State NSS Cell/ NCC Directorate",
+      "evidence_issuers": [
+        "state_government",
+        "state_nss_cell",
+        "ncc_directorate"
+      ],
+      "conditions": {
+        "min_duration_days": 10,
+        "min_hours": 50
+      },
+      "cap_subhead": null,
+      "cap_category": 40,
+      "shared_cap_id": "shared_nss_ncc_category_1_11_1_19",
+      "shared_cap_max": 40,
+      "auto_class": "A",
+      "ambiguity_refs": ["A-09"],
+      "remarks": "Category Cap 40"
+    },
+    {
+      "id": "1.18",
+      "group": "I",
+      "major_head": "NSS/NCC",
+      "sub_activity_head": "Participation in Republic Day Camp (RDC) or Independence Day Camp (IDC) Or Participation in international events approved by State Cell/Directorate of NSS/NCC",
+      "kind": "flat",
+      "handbook_page": 5,
+      "handbook_page_pdf": 8,
+      "points": 25,
+      "documentary_evidence": "Certificate issued by the University/State NSS Cell/ NCC Directorate",
+      "evidence_issuers": [
+        "rdc_idc_authority",
+        "state_nss_cell",
+        "ncc_directorate"
+      ],
+      "conditions": {
+        "camp_type": [
+          "RDC",
+          "IDC",
+          "approved_international_events"
+        ]
+      },
+      "cap_subhead": null,
+      "cap_category": 40,
+      "shared_cap_id": "shared_nss_ncc_category_1_11_1_19",
+      "shared_cap_max": 40,
+      "auto_class": "A",
+      "ambiguity_refs": ["A-09"],
+      "remarks": "Category Cap 40"
+    },
+    {
+      "id": "1.19",
+      "group": "I",
+      "major_head": "NSS/NCC",
+      "sub_activity_head": "NCC Certificates",
+      "kind": "role_based",
+      "handbook_page": 5,
+      "handbook_page_pdf": 8,
+      "points": [
+        {
+          "title": "NCC 'B' Certificate",
+          "points": 20
+        },
+        {
+          "title": "NCC 'C' Certificate",
+          "points": 30
+        },
+        {
+          "title": "One Year NCC + Minimum Parade Attendance",
+          "points": 10
+        }
+      ],
+      "documentary_evidence": "Certificate issued by the University/NCC Directorate",
+      "evidence_issuers": [
+        "ncc_directorate",
+        "university"
+      ],
+      "conditions": {
+        "certificate_type": [
+          "B",
+          "C",
+          "one_year_with_parade_attendance"
+        ]
+      },
+      "cap_subhead": null,
+      "cap_category": 40,
+      "shared_cap_id": "shared_nss_ncc_category_1_11_1_19",
+      "shared_cap_max": 40,
+      "auto_class": "A",
+      "ambiguity_refs": ["A-09", "A-19"],
+      "remarks": "NCC 'B' Certificate - 20 Points, NCC 'C' Certificate - 30 Points, One Year NCC + Minimum Parade Attendance - 10 Points. Category Cap 40"
+    },
+    {
+      "id": "1.20",
+      "group": "I",
+      "major_head": "Health, Safety, and Essential Life Skills",
+      "sub_activity_head": "Emergency Response, First Aid, CPR & Fire Safety Training: Students who successfully complete a minimum half-day certified training programme in Emergency Response, First Aid, CPR, Basic Life Support (BLS), or Fire Safety shall be eligible for Activity Points. The training must be organized at the college level and conducted by Government organizations, approved training agencies, Fire & Rescue Services, or registered hospitals.",
+      "kind": "per_unit",
+      "handbook_page": 6,
+      "handbook_page_pdf": 9,
+      "points": {
+        "per": "training_programme",
+        "points_each": 5
+      },
+      "documentary_evidence": "Certificates must be issued by the Government organization, Fire & Rescue Services, approved training agencies, or registered hospitals. If unavailable, certificates signed by the faculty coordinator or the NSS Programme Officer may also be accepted.",
+      "evidence_issuers": [
+        "government_organization",
+        "fire_rescue_services",
+        "approved_training_agencies",
+        "registered_hospitals",
+        "faculty_coordinator",
+        "nss_programme_officer"
+      ],
+      "conditions": {
+        "min_duration_half_day": true,
+        "organized_at_college_level": true
+      },
+      "cap_subhead": 10,
+      "cap_category": null,
+      "shared_cap_id": "shared_health_safety_1_20_1_21",
+      "shared_cap_max": 10,
+      "auto_class": "A",
+      "ambiguity_refs": ["A-07"],
+      "remarks": "5 Points /Training programme. Maximum-10 points shared with 1.21"
+    },
+    {
+      "id": "1.21",
+      "group": "I",
+      "major_head": "Health, Safety, and Essential Life Skills",
+      "sub_activity_head": "Activity Points for Students Who Know Basic Swimming",
+      "kind": "flat",
+      "handbook_page": 6,
+      "handbook_page_pdf": 9,
+      "points": 5,
+      "documentary_evidence": "Certificates issued by Panchayat/Municipality swimming instructors, Kerala State Sports Council coaches, or registered swimming academies. In the absence of the above, certificates issued by the institution’s Physical Education Department, based on a formally conducted swimming proficiency test, may also be accepted.",
+      "evidence_issuers": [
+        "panchayat_municipality_swimming_instructor",
+        "kerala_state_sports_council_coach",
+        "registered_swimming_academy",
+        "college_physical_education_department"
+      ],
+      "conditions": {
+        "basic_swimming_proficiency_certified": true
+      },
+      "cap_subhead": 10,
+      "cap_category": null,
+      "shared_cap_id": "shared_health_safety_1_20_1_21",
+      "shared_cap_max": 10,
+      "auto_class": "A/C",
+      "ambiguity_refs": ["A-07"],
+      "remarks": "5 Points. Maximum-10 points shared with 1.20"
+    },
+    {
+      "id": "1.22",
+      "group": "I",
+      "major_head": "Union/Club Activities",
+      "sub_activity_head": "College Union members",
+      "kind": "role_based",
+      "handbook_page": 7,
+      "handbook_page_pdf": 10,
+      "points": [
+        {
+          "title": "Office Bearers",
+          "points": 20
+        },
+        {
+          "title": "Executive Committee Members (Excluding Office Bearers)",
+          "points": 15
+        },
+        {
+          "title": "University Union Office Bearers",
+          "points": 30
+        },
+        {
+          "title": "University Union Members (Excluding Office Bearers)",
+          "points": 25
+        }
+      ],
+      "documentary_evidence": "Certificates issued by the College Union Advisor/ Dean-Academics(KTU)",
+      "evidence_issuers": [
+        "college_union_advisor",
+        "dean_academics_ktu"
+      ],
+      "conditions": {
+        "position_certified": true
+      },
+      "cap_subhead": 30,
+      "cap_category": null,
+      "shared_cap_id": null,
+      "shared_cap_max": null,
+      "auto_class": "A/C",
+      "ambiguity_refs": [],
+      "remarks": "Maximum-30 points"
+    },
+    {
+      "id": "1.23",
+      "group": "I",
+      "major_head": "Union/Club Activities",
+      "sub_activity_head": "College Magazine Editorial Board (Other than the Magazine Editor)",
+      "kind": "per_unit",
+      "handbook_page": 7,
+      "handbook_page_pdf": 10,
+      "points": {
+        "per": "academic_year",
+        "points_each": 5,
+        "max_units_per_year": 1
+      },
+      "documentary_evidence": "Certificate from the staff in charge of the Editorial Committee or from the College Union Advisor.",
+      "evidence_issuers": [
+        "staff_in_charge_editorial_committee",
+        "college_union_advisor"
+      ],
+      "conditions": {
+        "max_students_per_academic_year": 8,
+        "role_not_magazine_editor": true
+      },
+      "cap_subhead": 10,
+      "cap_category": null,
+      "shared_cap_id": "shared_magazine_hobby_1_23_1_24",
+      "shared_cap_max": 10,
+      "auto_class": "A/C",
+      "ambiguity_refs": ["A-08"],
+      "remarks": "5 Points per Academic Year (Points shall be awarded to a maximum of 8 students per academic year.) Maximum-10 points shared with 1.24"
+    },
+    {
+      "id": "1.24",
+      "group": "I",
+      "major_head": "Union/Club Activities",
+      "sub_activity_head": "Hobby Clubs under College Union (Photography Club, Film Club, Music Club, Dance Club, Literary Club, Debate Club, Coding Club, Nature Club, etc.)",
+      "kind": "per_unit",
+      "handbook_page": 7,
+      "handbook_page_pdf": 10,
+      "points": {
+        "per": "academic_year",
+        "points_each": 5,
+        "max_units_per_year": 1
+      },
+      "documentary_evidence": "Certificate from the staff in charge of the Club and from the College Union Advisor.",
+      "evidence_issuers": [
+        "staff_in_charge_of_club",
+        "college_union_advisor"
+      ],
+      "conditions": {
+        "role": [
+          "Executive Committee Members",
+          "Convenors"
+        ]
+      },
+      "cap_subhead": 10,
+      "cap_category": null,
+      "shared_cap_id": "shared_magazine_hobby_1_23_1_24",
+      "shared_cap_max": 10,
+      "auto_class": "A",
+      "ambiguity_refs": ["A-08"],
+      "remarks": "Executive Committee Members/Convenors - 5 Points per Academic Year. Maximum-10 points shared with 1.23"
+    },
+    {
+      "id": "2.1",
+      "group": "II",
+      "major_head": "Technical Events, Competitions & Academic Presentations",
+      "sub_activity_head": "Tech-Fest-Participation (Organized or Approved by KTU)",
+      "kind": "leveled",
+      "handbook_page": 8,
+      "handbook_page_pdf": 11,
+      "points": {
+        "college": 2,
+        "zonal": 5,
+        "state": 10,
+        "national": 20,
+        "international": 30
+      },
+      "documentary_evidence": "Certificates issued by the Organizing Institution, the Staff-in-Charge of the Professional Society Chapter, Dean Student affairs or the College Union Advisor, and verified by the SFA.",
+      "evidence_issuers": [
+        "organizing_institution",
+        "staff_in_charge_professional_society",
+        "dean_student_affairs",
+        "college_union_advisor"
+      ],
+      "conditions": {
+        "ktu_organized_or_approved": true,
+        "sfa_verification_required": true
+      },
+      "cap_subhead": 40,
+      "cap_category": null,
+      "shared_cap_id": "shared_tech_events_2_1_2_4",
+      "shared_cap_max": 40,
+      "auto_class": "A",
+      "ambiguity_refs": ["A-05", "A-12"],
+      "remarks": "Maximum-40 points for 2.1-2.4"
+    },
+    {
+      "id": "2.2",
+      "group": "II",
+      "major_head": "Technical Events, Competitions & Academic Presentations",
+      "sub_activity_head": "Tech-Fest-Winners (Organized or Approved by KTU)",
+      "kind": "leveled",
+      "handbook_page": 8,
+      "handbook_page_pdf": 11,
+      "points": {
+        "college": 5,
+        "zonal": 10,
+        "state": 20,
+        "national": 40,
+        "international": 40
+      },
+      "documentary_evidence": "Certificates issued by the Organizing Institution, the Staff-in-Charge of the Professional Society Chapter, Dean Student affairs or the College Union Advisor, and verified by the SFA.",
+      "evidence_issuers": [
+        "organizing_institution",
+        "staff_in_charge_professional_society",
+        "dean_student_affairs",
+        "college_union_advisor"
+      ],
+      "conditions": {
+        "ktu_organized_or_approved": true,
+        "position": ["1st", "2nd", "3rd"],
+        "sfa_verification_required": true
+      },
+      "cap_subhead": 40,
+      "cap_category": null,
+      "shared_cap_id": "shared_tech_events_2_1_2_4",
+      "shared_cap_max": 40,
+      "auto_class": "A",
+      "ambiguity_refs": ["A-05", "A-12"],
+      "remarks": "Maximum-40 points for 2.1-2.4"
+    },
+    {
+      "id": "2.3",
+      "group": "II",
+      "major_head": "Technical Events, Competitions & Academic Presentations",
+      "sub_activity_head": "Technical Competitions and Events Organized by Professional Societies (IEEE, IET, ASME, SAE, etc.)- Participation",
+      "kind": "leveled",
+      "handbook_page": 8,
+      "handbook_page_pdf": 11,
+      "points": {
+        "college": 2,
+        "zonal": 5,
+        "state": 10,
+        "national": 15,
+        "international": 20
+      },
+      "documentary_evidence": "Certificates issued by the Organizing Institution, the Staff-in-Charge of the Professional Society Chapter, Dean Student affairs or the College Union Advisor, and verified by the SFA.",
+      "evidence_issuers": [
+        "professional_society",
+        "organizing_institution"
+      ],
+      "conditions": {
+        "organized_by_professional_society": true,
+        "sfa_verification_required": true
+      },
+      "cap_subhead": 40,
+      "cap_category": null,
+      "shared_cap_id": "shared_tech_events_2_1_2_4",
+      "shared_cap_max": 40,
+      "auto_class": "A",
+      "ambiguity_refs": ["A-05"],
+      "remarks": "Maximum-40 points for 2.1-2.4"
+    },
+    {
+      "id": "2.4",
+      "group": "II",
+      "major_head": "Technical Events, Competitions & Academic Presentations",
+      "sub_activity_head": "Technical Competitions and Events Organized by Professional Societies (IEEE, IET, ASME, SAE, etc.)- (Winners-1,2 and 3)",
+      "kind": "leveled",
+      "handbook_page": 8,
+      "handbook_page_pdf": 11,
+      "points": {
+        "college": 3,
+        "zonal": 7,
+        "state": 15,
+        "national": 25,
+        "international": 35
+      },
+      "documentary_evidence": "Certificates issued by the Organizing Institution, the Staff-in-Charge of the Professional Society Chapter, Dean Student affairs or the College Union Advisor, and verified by the SFA.",
+      "evidence_issuers": [
+        "professional_society",
+        "organizing_institution"
+      ],
+      "conditions": {
+        "organized_by_professional_society": true,
+        "position": ["1st", "2nd", "3rd"],
+        "sfa_verification_required": true
+      },
+      "cap_subhead": 40,
+      "cap_category": null,
+      "shared_cap_id": "shared_tech_events_2_1_2_4",
+      "shared_cap_max": 40,
+      "auto_class": "A",
+      "ambiguity_refs": ["A-05"],
+      "remarks": "Maximum-40 points for 2.1-2.4"
+    },
+    {
+      "id": "2.5",
+      "group": "II",
+      "major_head": "Technical Events, Competitions & Academic Presentations",
+      "sub_activity_head": "Attending full-time Conferences, Seminars, Webinars, Workshops, STTPs, etc., conducted by IITs, IIITs, NITs, Central Universities, Institutions of National Importance, and institutes ranked within NIRF Top 100 (Excluding those conducted as part of college fest activities such as Ragam).",
+      "kind": "per_unit",
+      "handbook_page": 8,
+      "handbook_page_pdf": 11,
+      "points": {
+        "per": "event",
+        "points_each": 5
+      },
+      "documentary_evidence": "Certificates issued by the Organizing Institution, the Staff-in-Charge of the Professional Society Chapter, Dean Student affairs or the College Union Advisor, and verified by the SFA.",
+      "evidence_issuers": [
+        "iits",
+        "iiits",
+        "nits",
+        "central_universities",
+        "institutions_of_national_importance",
+        "nirf_top_100"
+      ],
+      "conditions": {
+        "full_time": true,
+        "excluded_fest_activities": true,
+        "sfa_verification_required": true
+      },
+      "cap_subhead": 15,
+      "cap_category": null,
+      "shared_cap_id": null,
+      "shared_cap_max": null,
+      "auto_class": "A",
+      "ambiguity_refs": ["A-04"],
+      "remarks": "5 Points/Event. Maximum-15 points"
+    },
+    {
+      "id": "2.6",
+      "group": "II",
+      "major_head": "Technical Events, Competitions & Academic Presentations",
+      "sub_activity_head": "Poster Presentation- Participation (Events organized/approved by KTU or conducted by IITs, IIITs, NITs, Central Universities, Institutions of National Importance, and NIRF Top 100 institutions)",
+      "kind": "per_unit",
+      "handbook_page": 8,
+      "handbook_page_pdf": 11,
+      "points": {
+        "per": "event",
+        "points_each": 5
+      },
+      "documentary_evidence": "Certificates issued by the Organizing Institution, the Staff-in-Charge of the Professional Society Chapter, Dean Student affairs or the College Union Advisor, and verified by the SFA.",
+      "evidence_issuers": [
+        "ktu",
+        "iits",
+        "iiits",
+        "nits",
+        "central_universities",
+        "institutions_of_national_importance",
+        "nirf_top_100"
+      ],
+      "conditions": {
+        "sfa_verification_required": true
+      },
+      "cap_subhead": null,
+      "cap_category": null,
+      "shared_cap_id": "shared_presentations_2_6_2_10",
+      "shared_cap_max": 40,
+      "auto_class": "A",
+      "ambiguity_refs": ["A-04"],
+      "remarks": "5 Points/Event. Visually flows into 2.7-2.10 cap block"
+    },
+    {
+      "id": "2.7",
+      "group": "II",
+      "major_head": "Technical Events, Competitions & Academic Presentations",
+      "sub_activity_head": "Paper Presentation- Participation (Events Organized by KTU or conducted by IITs, IIITs, NITs, Central Universities, Institutions of National Importance, and NIRF Top 100 institutions)",
+      "kind": "per_unit",
+      "handbook_page": 9,
+      "handbook_page_pdf": 12,
+      "points": {
+        "per": "event",
+        "points_each": 10
+      },
+      "documentary_evidence": "Certificates issued by the Organizing Institution, verified by SFA.",
+      "evidence_issuers": [
+        "ktu",
+        "iits",
+        "iiits",
+        "nits",
+        "central_universities",
+        "institutions_of_national_importance",
+        "nirf_top_100"
+      ],
+      "conditions": {
+        "sfa_verification_required": true
+      },
+      "cap_subhead": 40,
+      "cap_category": null,
+      "shared_cap_id": "shared_presentations_2_6_2_10",
+      "shared_cap_max": 40,
+      "auto_class": "A",
+      "ambiguity_refs": ["A-04"],
+      "remarks": "10 Points /Event. Maximum-40 points"
+    },
+    {
+      "id": "2.8",
+      "group": "II",
+      "major_head": "Technical Events, Competitions & Academic Presentations",
+      "sub_activity_head": "Paper Presentation-(Winners) (Events organized/approved by KTU or conducted by IITs, IIITs, NITs, Central Universities, Institutions of National Importance, and NIRF Top 100 institutions)",
+      "kind": "role_based",
+      "handbook_page": 9,
+      "handbook_page_pdf": 12,
+      "points": [
+        {
+          "title": "First Prize",
+          "points": 20
+        },
+        {
+          "title": "Second and Third",
+          "points": 15
+        }
+      ],
+      "documentary_evidence": "Certificates issued by the Organizing Institution, verified by SFA.",
+      "evidence_issuers": [
+        "ktu",
+        "iits",
+        "iiits",
+        "nits",
+        "central_universities",
+        "institutions_of_national_importance",
+        "nirf_top_100"
+      ],
+      "conditions": {
+        "position": ["1st", "2nd", "3rd"],
+        "sfa_verification_required": true
+      },
+      "cap_subhead": 40,
+      "cap_category": null,
+      "shared_cap_id": "shared_presentations_2_6_2_10",
+      "shared_cap_max": 40,
+      "auto_class": "A",
+      "ambiguity_refs": ["A-04"],
+      "remarks": "First Prize-20 Points, Second and Third-15 Points. Maximum-40 points"
+    },
+    {
+      "id": "2.9",
+      "group": "II",
+      "major_head": "Technical Events, Competitions & Academic Presentations",
+      "sub_activity_head": "Paper Presentation- Participation (KTU Affiliated institutions)",
+      "kind": "per_unit",
+      "handbook_page": 9,
+      "handbook_page_pdf": 12,
+      "points": {
+        "per": "event",
+        "points_each": 5
+      },
+      "documentary_evidence": "Certificates issued by the Organizing Institution, verified by SFA.",
+      "evidence_issuers": [
+        "ktu_affiliated_institutions"
+      ],
+      "conditions": {
+        "sfa_verification_required": true
+      },
+      "cap_subhead": 40,
+      "cap_category": null,
+      "shared_cap_id": "shared_presentations_2_6_2_10",
+      "shared_cap_max": 40,
+      "auto_class": "A",
+      "ambiguity_refs": ["A-04"],
+      "remarks": "5 Points /Event. Maximum-40 points"
+    },
+    {
+      "id": "2.10",
+      "group": "II",
+      "major_head": "Technical Events, Competitions & Academic Presentations",
+      "sub_activity_head": "Paper Presentation-Winners (KTU Affiliated institutions)",
+      "kind": "role_based",
+      "handbook_page": 9,
+      "handbook_page_pdf": 12,
+      "points": [
+        {
+          "title": "First Prize",
+          "points": 10
+        },
+        {
+          "title": "Second and Third",
+          "points": 7
+        }
+      ],
+      "documentary_evidence": "Certificates issued by the Organizing Institution, verified by SFA.",
+      "evidence_issuers": [
+        "ktu_affiliated_institutions"
+      ],
+      "conditions": {
+        "position": ["1st", "2nd", "3rd"],
+        "sfa_verification_required": true
+      },
+      "cap_subhead": 40,
+      "cap_category": null,
+      "shared_cap_id": "shared_presentations_2_6_2_10",
+      "shared_cap_max": 40,
+      "auto_class": "A",
+      "ambiguity_refs": ["A-04"],
+      "remarks": "First Prize-10 Points, Second and Third-7 Points. Maximum-40 points"
+    },
+    {
+      "id": "2.11",
+      "group": "II",
+      "major_head": "Leadership & Management",
+      "sub_activity_head": "Membership in Student Professional Societies (IEEE, IET, ASME, SAE, ACM, ASCE, ISA, etc. for a Minimum Period of 2 Academic Years)",
+      "kind": "role_based",
+      "handbook_page": 9,
+      "handbook_page_pdf": 12,
+      "points": [
+        {
+          "title": "Member",
+          "points": 5
+        },
+        {
+          "title": "Executive Committee Members",
+          "points": 10
+        },
+        {
+          "title": "Student Secretary/Chapter Lead/Chair",
+          "points": 15
+        },
+        {
+          "title": "Student Coordinator for an event",
+          "points": 5,
+          "unit": "per_event"
+        }
+      ],
+      "documentary_evidence": "Certificates issued by the Professional Society Chapter / Organizing Institution, verified by SFA.",
+      "evidence_issuers": [
+        "professional_society",
+        "chapter_faculty_advisor"
+      ],
+      "conditions": {
+        "min_period_years": 2
+      },
+      "cap_subhead": 15,
+      "cap_category": 40,
+      "shared_cap_id": "shared_leadership_category_2_11_2_18",
+      "shared_cap_max": 40,
+      "auto_class": "A/B",
+      "ambiguity_refs": ["A-20"],
+      "remarks": "Maximum-15 points. Category cap 40"
+    },
+    {
+      "id": "2.12",
+      "group": "II",
+      "major_head": "Leadership & Management",
+      "sub_activity_head": "Department Student Association Activities",
+      "kind": "role_based",
+      "handbook_page": 9,
+      "handbook_page_pdf": 12,
+      "points": [
+        {
+          "title": "Executive Committee Members /Office Bearer",
+          "points": 5,
+          "unit": "per_academic_year"
+        },
+        {
+          "title": "Student Coordinator for an event",
+          "points": 5,
+          "unit": "per_event"
+        }
+      ],
+      "documentary_evidence": "HOD certification",
+      "evidence_issuers": [
+        "hod"
+      ],
+      "conditions": {
+        "hod_certification": true
+      },
+      "cap_subhead": 10,
+      "cap_category": 40,
+      "shared_cap_id": "shared_leadership_category_2_11_2_18",
+      "shared_cap_max": 40,
+      "auto_class": "C",
+      "ambiguity_refs": [],
+      "remarks": "Executive Committee Members /Office Bearer- 5 Points per Academic Year. Student Coordinator for an event-5/Event. Maximum-10 points. Category cap 40"
+    },
+    {
+      "id": "2.13",
+      "group": "II",
+      "major_head": "Leadership & Management",
+      "sub_activity_head": "Class Representatives",
+      "kind": "per_unit",
+      "handbook_page": 9,
+      "handbook_page_pdf": 12,
+      "points": {
+        "per": "academic_year",
+        "points_each": 5,
+        "max_units_per_year": 1
+      },
+      "documentary_evidence": "SFA certification",
+      "evidence_issuers": [
+        "sfa"
+      ],
+      "conditions": {
+        "max_representatives_per_class": 1
+      },
+      "cap_subhead": 10,
+      "cap_category": 40,
+      "shared_cap_id": "shared_leadership_category_2_11_2_18",
+      "shared_cap_max": 40,
+      "auto_class": "C",
+      "ambiguity_refs": [],
+      "remarks": "5 Points per Academic Year (1 Class Representative per class). Maximum-10 points. Category cap 40"
+    },
+    {
+      "id": "2.14",
+      "group": "II",
+      "major_head": "Leadership & Management",
+      "sub_activity_head": "Industrial Visit Coordinators (Minimum 6 Days)",
+      "kind": "flat",
+      "handbook_page": 9,
+      "handbook_page_pdf": 12,
+      "points": 5,
+      "documentary_evidence": "SFA certification",
+      "evidence_issuers": [
+        "sfa"
+      ],
+      "conditions": {
+        "min_duration_days": 6,
+        "max_coordinators_per_class": 2
+      },
+      "cap_subhead": 5,
+      "cap_category": 40,
+      "shared_cap_id": "shared_leadership_category_2_11_2_18",
+      "shared_cap_max": 40,
+      "auto_class": "C",
+      "ambiguity_refs": [],
+      "remarks": "5 Points (Maximum 2 Coordinators/Class). Maximum-5 points. Category cap 40"
+    },
+    {
+      "id": "2.15",
+      "group": "II",
+      "major_head": "Leadership & Management",
+      "sub_activity_head": "Placement Cell (Minimum period of one Academic Year)",
+      "kind": "role_based",
+      "handbook_page": 10,
+      "handbook_page_pdf": 13,
+      "points": [
+        {
+          "title": "Executive Committee Members",
+          "points": 5,
+          "details": "One student/Class"
+        },
+        {
+          "title": "Coordinators / Convenors",
+          "points": 10,
+          "details": "Maximum: 2 Coordinators; at least one of them shall be a female student"
+        }
+      ],
+      "documentary_evidence": "Certificates issued by the Staff-in-Charge of the CGPU",
+      "evidence_issuers": [
+        "staff_in_charge_cgpu"
+      ],
+      "conditions": {
+        "min_period_years": 1,
+        "female_coordinator_quota_check": true
+      },
+      "cap_subhead": 10,
+      "cap_category": 40,
+      "shared_cap_id": "shared_leadership_category_2_11_2_18",
+      "shared_cap_max": 40,
+      "auto_class": "C",
+      "ambiguity_refs": [],
+      "remarks": "Maximum-10 points. Category cap 40"
+    },
+    {
+      "id": "2.16",
+      "group": "II",
+      "major_head": "Leadership & Management",
+      "sub_activity_head": "IEDC Cell (Minimum period of one Academic Year)",
+      "kind": "role_based",
+      "handbook_page": 10,
+      "handbook_page_pdf": 13,
+      "points": [
+        {
+          "title": "Executive Committee Members /Office Bearer",
+          "points": 5,
+          "unit": "per_academic_year"
+        },
+        {
+          "title": "Student Coordinator for an event",
+          "points": 5,
+          "unit": "per_event"
+        }
+      ],
+      "documentary_evidence": "Certificates issued by the Staff-in-Charge of the IEDC Cell",
+      "evidence_issuers": [
+        "staff_in_charge_iedc_cell"
+      ],
+      "conditions": {
+        "min_period_years": 1
+      },
+      "cap_subhead": 10,
+      "cap_category": 40,
+      "shared_cap_id": "shared_leadership_category_2_11_2_18",
+      "shared_cap_max": 40,
+      "auto_class": "A/C",
+      "ambiguity_refs": [],
+      "remarks": "Maximum-10 points. Category cap 40"
+    },
+    {
+      "id": "2.17",
+      "group": "II",
+      "major_head": "Leadership & Management",
+      "sub_activity_head": "YIP (Young Innovators Programme, K-DISC ) (Minimum period of one Academic Year)",
+      "kind": "flat",
+      "handbook_page": 10,
+      "handbook_page_pdf": 13,
+      "points": 5,
+      "documentary_evidence": "Certificates issued by K-DISC or by authorized officials of the YIP Programme",
+      "evidence_issuers": [
+        "k_disc",
+        "authorized_officials_yip"
+      ],
+      "conditions": {
+        "role": "Student Coordinator",
+        "min_period_years": 1
+      },
+      "cap_subhead": 10,
+      "cap_category": 40,
+      "shared_cap_id": "shared_leadership_category_2_11_2_18",
+      "shared_cap_max": 40,
+      "auto_class": "A",
+      "ambiguity_refs": [],
+      "remarks": "Student Coordinator :5 Points. Maximum-10 points. Category cap 40"
+    },
+    {
+      "id": "2.18",
+      "group": "II",
+      "major_head": "Leadership & Management",
+      "sub_activity_head": "STRIDE -Social Technology & Research for Inclusive Design Excellence (K-DISC) (Minimum period of 1 Academic Year)",
+      "kind": "role_based",
+      "handbook_page": 10,
+      "handbook_page_pdf": 13,
+      "points": [
+        {
+          "title": "Certified Volunteer",
+          "points": 5,
+          "details": "Officially certified by STRIDE for 1-year volunteer service"
+        },
+        {
+          "title": "STRIDE Membership",
+          "points": 5,
+          "details": "Any enrolled / registered STRIDE Member"
+        },
+        {
+          "title": "Leadership Team Role",
+          "points": 10,
+          "details": "Campus Leadership Team Member / STRIDE Main Team Core Member"
+        },
+        {
+          "title": "High Impact Project Team L1",
+          "points": 10,
+          "details": "Leading a verified community impact project under STRIDE: L1-10 Points"
+        },
+        {
+          "title": "High Impact Project Team L2",
+          "points": 15,
+          "details": "Leading a verified community impact project under STRIDE: L2-15 Points"
+        },
+        {
+          "title": "High Impact Project Team L5",
+          "points": 20,
+          "details": "Leading a verified community impact project under STRIDE: L5-20 Points (handbook typo for L3)"
+        }
+      ],
+      "documentary_evidence": "Certificates issued by K-DISC or by authorized officials of the STRIDE Programme",
+      "evidence_issuers": [
+        "k_disc",
+        "authorized_officials_stride"
+      ],
+      "conditions": {
+        "min_period_years": 1
+      },
+      "cap_subhead": 20,
+      "cap_category": 40,
+      "shared_cap_id": "shared_leadership_category_2_11_2_18",
+      "shared_cap_max": 40,
+      "auto_class": "A",
+      "ambiguity_refs": ["A-10"],
+      "remarks": "Maximum-20 points. Category cap 40"
+    },
+    {
+      "id": "2.19",
+      "group": "II",
+      "major_head": "FOSS Activities & Open-Source Contributions",
+      "sub_activity_head": "International Centre for Free and Open-Source Software ICFOSS / FOSS Club Activities- (Minimum Period of 1 Academic Year)",
+      "kind": "role_based",
+      "handbook_page": 11,
+      "handbook_page_pdf": 14,
+      "points": [
+        {
+          "title": "FOSS Club Member who participated in at least 2 club activities",
+          "points": 5
+        },
+        {
+          "title": "FOSS Club Student Lead / FOSS Coordinator/ambassador",
+          "points": 10
+        },
+        {
+          "title": "Participation in ICFOSS approved Workshops / Bootcamps (Minimum 2 days)",
+          "points": 5
+        },
+        {
+          "title": "Participation in ICFOSS Hackathons / FOSS Events",
+          "points": 5
+        },
+        {
+          "title": "Contribution to Open-Source Projects (contributions to be validated by ICFOSS)",
+          "points": 10,
+          "details": "GitHub/ GitLab contributions to major open-source projects / Substantial contributions to Wikipedia, open street map or similar community projects"
+        },
+        {
+          "title": "Participation in FOSS Project Development under ICFOSS/ FOSS internships at ICFOSS (minimum 15 days)",
+          "points": 10
+        }
+      ],
+      "documentary_evidence": "Certificates issued by ICFOSS, event organizers approved by ICFOSS, or by the faculty-in-Charge of the FOSS Club",
+      "evidence_issuers": [
+        "icfoss",
+        "icfoss_approved_organizers",
+        "faculty_in_charge_foss_club"
+      ],
+      "conditions": {
+        "min_period_years": 1
+      },
+      "cap_subhead": 20,
+      "cap_category": null,
+      "shared_cap_id": null,
+      "shared_cap_max": null,
+      "auto_class": "A/B",
+      "ambiguity_refs": [],
+      "remarks": "Maximum-20 points"
+    },
+    {
+      "id": "2.20",
+      "group": "II",
+      "major_head": "Short-Term Internship",
+      "sub_activity_head": "Short-Term Internship / Clinical Exposure Training (Minimum 2 Weeks or 10 Working Days)",
+      "kind": "flat",
+      "handbook_page": 11,
+      "handbook_page_pdf": 14,
+      "points": 10,
+      "documentary_evidence": "Certificates issued by the organization, company, or institution where the student underwent the internship or clinical exposure.",
+      "evidence_issuers": [
+        "internship_host_organization",
+        "company",
+        "clinical_institution"
+      ],
+      "conditions": {
+        "min_duration_weeks": 2,
+        "min_working_days": 10
+      },
+      "cap_subhead": 10,
+      "cap_category": null,
+      "shared_cap_id": null,
+      "shared_cap_max": null,
+      "auto_class": "A/B",
+      "ambiguity_refs": [],
+      "remarks": "10 Points. Maximum-10 points"
+    },
+    {
+      "id": "2.21",
+      "group": "II",
+      "major_head": "Standardized Tests & Proficiency Certifications",
+      "sub_activity_head": "English Proficiency Certifications",
+      "kind": "tiered_score",
+      "handbook_page": 11,
+      "handbook_page_pdf": 14,
+      "points": {
+        "tests": {
+          "TOEFL_iBT": [
+            { "min": 105, "pts": 30 },
+            { "min": 95, "max": 104, "pts": 25 },
+            { "min": 80, "max": 94, "pts": 20 }
+          ],
+          "IELTS_Academic": [
+            { "min": "7.5", "pts": 30 },
+            { "min": "7.0", "pts": 25 },
+            { "min": "6.5", "pts": 20 }
+          ],
+          "PTE_Academic": [
+            { "min": 76, "pts": 30 },
+            { "min": 65, "max": 75, "pts": 25 },
+            { "min": 58, "max": 64, "pts": 20 }
+          ],
+          "Cambridge_BEC": [
+            { "level": "Higher_C1", "pts": 25 },
+            { "level": "Vantage_B2", "pts": 20 },
+            { "level": "Preliminary_B1", "pts": 15 }
+          ]
+        }
+      },
+      "documentary_evidence": "Certificates issued by the official testing organizations or their authorized online portals. Students shall submit the original score report or downloadable digital scorecard issued by the respective testing authority. Only tests taken during the student’s original programme duration will be considered for Activity Points.",
+      "evidence_issuers": [
+        "ets",
+        "ielts_idp_british_council",
+        "pearson",
+        "cambridge_english"
+      ],
+      "conditions": {
+        "taken_during_programme": true,
+        "official_score_report": true
+      },
+      "cap_subhead": 30,
+      "cap_category": null,
+      "shared_cap_id": null,
+      "shared_cap_max": null,
+      "auto_class": "A/B",
+      "ambiguity_refs": [],
+      "remarks": "Maximum-30 points"
+    },
+    {
+      "id": "2.22",
+      "group": "II",
+      "major_head": "Standardized Tests & Proficiency Certifications",
+      "sub_activity_head": "Aptitude Proficiency Certifications (GRE, CAT, GMAT, GATE)",
+      "kind": "tiered_score",
+      "handbook_page": 12,
+      "handbook_page_pdf": 15,
+      "points": {
+        "tests": {
+          "GRE": [
+            { "min": 320, "pts": 30 },
+            { "min": 310, "max": 319, "pts": 25 },
+            { "min": 300, "max": 309, "pts": 20 }
+          ],
+          "GATE": [
+            { "type": "air_rank", "max_rank": 5000, "pts": 30, "description": "GATE AIR within Top 5000" },
+            { "type": "air_rank", "min_rank": 5001, "max_rank": 15000, "pts": 25, "description": "GATE AIR 5001 – 15000" },
+            { "type": "qualified", "pts": 20, "description": "Qualified GATE (Valid GATE Score)" }
+          ],
+          "CAT": [
+            { "min_percentile": "95.0", "pts": 30 },
+            { "min_percentile": "90.0", "max_percentile": "94.99", "pts": 25 },
+            { "min_percentile": "85.0", "max_percentile": "89.99", "pts": 20 }
+          ],
+          "GMAT": [
+            { "min": 700, "pts": 30 },
+            { "min": 650, "max": 699, "pts": 25 },
+            { "min": 600, "max": 649, "pts": 20 }
+          ]
+        }
+      },
+      "documentary_evidence": "Certificates / Score Reports issued by the official examination authorities or downloaded from the respective authorized portals. Students shall submit the official scorecard containing the score, percentile, test date, and candidate details.",
+      "evidence_issuers": [
+        "ets",
+        "iim_cat",
+        "gmac_gmat",
+        "gate_organizing_iit"
+      ],
+      "conditions": {
+        "taken_during_programme": true,
+        "official_scorecard": true
+      },
+      "cap_subhead": 30,
+      "cap_category": null,
+      "shared_cap_id": null,
+      "shared_cap_max": null,
+      "auto_class": "A/B",
+      "ambiguity_refs": [],
+      "remarks": "Maximum-30 points"
+    },
+    {
+      "id": "3.1",
+      "group": "III",
+      "major_head": "Industry Exposure, Academic Projects & Internships",
+      "sub_activity_head": "Industrial Visit /Industrial Training Report (S5 or S6): Students must prepare an Industrial Visit Report based on visits to a minimum of four industries relevant to their branch of study. The report should include key observations, processes studied, the major learning outcomes from each industry visited, and supporting photographs.",
+      "kind": "manual",
+      "handbook_page": 13,
+      "handbook_page_pdf": 16,
+      "points": 5,
+      "documentary_evidence": "The Industrial Visit / Industrial Training Report must be certified by the Faculty Coordinators / Faculty Members who accompanied the students for the visit, and by the SFA. The certification must confirm that the student has visited a minimum of four industries relevant to their branch of study and has submitted a report containing observations, processes studied, learning outcomes, and supporting photographs.",
+      "evidence_issuers": [
+        "faculty_coordinators",
+        "sfa"
+      ],
+      "conditions": {
+        "min_industries": 4,
+        "eligible_semesters": ["S5", "S6"],
+        "certified_by_faculty_and_sfa": true
+      },
+      "cap_subhead": 20,
+      "cap_category": null,
+      "shared_cap_id": "shared_iv_mini_project_3_1_3_2",
+      "shared_cap_max": 20,
+      "auto_class": "C",
+      "ambiguity_refs": ["A-16"],
+      "remarks": "5 Points. Maximum- 20 points shared with 3.2"
+    },
+    {
+      "id": "3.2",
+      "group": "III",
+      "major_head": "Industry Exposure, Academic Projects & Internships",
+      "sub_activity_head": "Best Mini Project / Best Project / Best Seminar (from each class)",
+      "kind": "manual",
+      "handbook_page": 13,
+      "handbook_page_pdf": 16,
+      "points": 5,
+      "documentary_evidence": "The certificate must be issued by the Coordinator of the Project/Seminar evaluation Committee and the SFA and approved by the HoD. The certificate shall clearly state that the student has been selected for the Best Mini Project / Best Project / Best Seminar in the respective class, based on the department’s approved evaluation criteria.",
+      "evidence_issuers": [
+        "evaluation_committee_coordinator",
+        "sfa",
+        "hod"
+      ],
+      "conditions": {
+        "min_class_strength": 30,
+        "approved_by_hod": true,
+        "certified_by_coordinator_and_sfa": true
+      },
+      "cap_subhead": 20,
+      "cap_category": null,
+      "shared_cap_id": "shared_iv_mini_project_3_1_3_2",
+      "shared_cap_max": 20,
+      "auto_class": "C",
+      "ambiguity_refs": ["A-16"],
+      "remarks": "5 Points. (To grant these points, the minimum class strength shall be 30 students.) Maximum- 20 points shared with 3.1"
+    },
+    {
+      "id": "3.3",
+      "group": "III",
+      "major_head": "Industry Exposure, Academic Projects & Internships",
+      "sub_activity_head": "Long-Term Internship: Internship for a minimum period of three and half months, as per KTU Long-Term Internship Guidelines",
+      "kind": "flat",
+      "handbook_page": 14,
+      "handbook_page_pdf": 17,
+      "points": 15,
+      "documentary_evidence": "Internship Completion Certificate mentioning start and end dates (minimum 3.5 months)",
+      "evidence_issuers": [
+        "internship_host_organization",
+        "company"
+      ],
+      "conditions": {
+        "min_duration_months": 3.5,
+        "per_ktu_guidelines": true
+      },
+      "cap_subhead": null,
+      "cap_category": null,
+      "shared_cap_id": null,
+      "shared_cap_max": null,
+      "auto_class": "A/B",
+      "ambiguity_refs": [],
+      "remarks": "15 Points."
+    },
+    {
+      "id": "3.4",
+      "group": "III",
+      "major_head": "Industry Exposure, Academic Projects & Internships",
+      "sub_activity_head": "LEAP – IIT Madras Incubation Cell Skill Development Bootcamps",
+      "kind": "role_based",
+      "handbook_page": 14,
+      "handbook_page_pdf": 17,
+      "points": [
+        {
+          "title": "Completion of LEAP Bootcamps (LPB01 & LPB02)",
+          "points": 10
+        },
+        {
+          "title": "Completion of LEAP Courses (LP1XX / LP2XX / LP3XX)",
+          "points": 15,
+          "unit": "per_course"
+        },
+        {
+          "title": "Completion of LEAP Project / Prototype Assigned by LEAP Mentor",
+          "points": 20
+        }
+      ],
+      "documentary_evidence": "Official LEAP Certificate issued by the IIT Madras Incubation Cell or its certified training partners / Certificate / Project Completion Letter from LEAP Mentor / IITMIC",
+      "evidence_issuers": [
+        "iit_madras_incubation_cell",
+        "leap_certified_partners",
+        "iitmic"
+      ],
+      "conditions": {},
+      "cap_subhead": 30,
+      "cap_category": null,
+      "shared_cap_id": null,
+      "shared_cap_max": null,
+      "auto_class": "A",
+      "ambiguity_refs": [],
+      "remarks": "Maximum- 30 points"
+    },
+    {
+      "id": "3.5",
+      "group": "III",
+      "major_head": "Industry Exposure, Academic Projects & Internships",
+      "sub_activity_head": "YIP – Young Innovators Programme (K-DISC)",
+      "kind": "milestone_based",
+      "handbook_page": 14,
+      "handbook_page_pdf": 17,
+      "points": [
+        {
+          "title": "Idea Submitted (Idea accepted in YIP portal)",
+          "points": 5
+        },
+        {
+          "title": "Preliminary Winner (Shortlisted for District Round)",
+          "points": 10
+        },
+        {
+          "title": "District Level Winner / Finalist (Selected by District Panel)",
+          "points": 20
+        },
+        {
+          "title": "State Level Winners",
+          "points": 35
+        }
+      ],
+      "documentary_evidence": "Certificates issued by K-DISC by the authorized officials of the YIP Programme.",
+      "evidence_issuers": [
+        "k_disc",
+        "authorized_officials_yip"
+      ],
+      "conditions": {},
+      "cap_subhead": 35,
+      "cap_category": null,
+      "shared_cap_id": null,
+      "shared_cap_max": null,
+      "auto_class": "A",
+      "ambiguity_refs": [],
+      "remarks": "Maximum- 35 points"
+    },
+    {
+      "id": "3.6",
+      "group": "III",
+      "major_head": "Industry Exposure, Academic Projects & Internships",
+      "sub_activity_head": "STRIDE – Social Technology & Research for Inclusive Design Excellence (K-DISC)",
+      "kind": "milestone_based",
+      "handbook_page": 14,
+      "handbook_page_pdf": 17,
+      "points": [
+        {
+          "title": "Idea Submitted (Idea accepted by STRIDE-Phase 1 completed)",
+          "points": 5
+        },
+        {
+          "title": "Top 100+ Teams (Selected to Phase-2)",
+          "points": 10
+        },
+        {
+          "title": "Top 30+ Teams (State-Level Finalists, Selected to Phase 3)",
+          "points": 20
+        },
+        {
+          "title": "State Level Winners",
+          "points": 35
+        }
+      ],
+      "documentary_evidence": "Certificates issued by K-DISC or by authorized officials of the STRIDE Programme",
+      "evidence_issuers": [
+        "k_disc",
+        "authorized_officials_stride"
+      ],
+      "conditions": {},
+      "cap_subhead": 35,
+      "cap_category": null,
+      "shared_cap_id": null,
+      "shared_cap_max": null,
+      "auto_class": "A",
+      "ambiguity_refs": [],
+      "remarks": "Maximum- 35 points"
+    },
+    {
+      "id": "3.7",
+      "group": "III",
+      "major_head": "Industry Exposure, Academic Projects & Internships",
+      "sub_activity_head": "GDC AI Workforce Internship Program",
+      "kind": "milestone_based",
+      "handbook_page": 14,
+      "handbook_page_pdf": 17,
+      "points": [
+        {
+          "title": "AI Grading Test Completed",
+          "points": 5
+        },
+        {
+          "title": "Learning Track Completed",
+          "points": 15
+        },
+        {
+          "title": "Fellowship Track Coursework Completed",
+          "points": 25
+        },
+        {
+          "title": "6-Month Internship Completed (GDC Fellow)",
+          "points": 35
+        }
+      ],
+      "documentary_evidence": "Certificates issued by AICTE, the official program executor or the National Health Mission (NHM)",
+      "evidence_issuers": [
+        "aicte",
+        "official_program_executor",
+        "nhm"
+      ],
+      "conditions": {},
+      "cap_subhead": 35,
+      "cap_category": null,
+      "shared_cap_id": null,
+      "shared_cap_max": null,
+      "auto_class": "A",
+      "ambiguity_refs": [],
+      "remarks": "Maximum- 35 points"
+    },
+    {
+      "id": "3.8",
+      "group": "III",
+      "major_head": "Industry Exposure, Academic Projects & Internships",
+      "sub_activity_head": "ICFOSS: A working FOSS-based solution or innovation certified by ICFOSS",
+      "kind": "flat",
+      "handbook_page": 14,
+      "handbook_page_pdf": 17,
+      "points": 25,
+      "documentary_evidence": "Certificate issued by ICFOSS",
+      "evidence_issuers": [
+        "icfoss"
+      ],
+      "conditions": {
+        "working_solution_or_innovation": true
+      },
+      "cap_subhead": 25,
+      "cap_category": null,
+      "shared_cap_id": null,
+      "shared_cap_max": null,
+      "auto_class": "A",
+      "ambiguity_refs": [],
+      "remarks": "25 Points. Maximum- 25 points"
+    },
+    {
+      "id": "3.9",
+      "group": "III",
+      "major_head": "Innovation, Entrepreneurship & Intellectual Property (IPR)",
+      "sub_activity_head": "Start-up Company (Legally Registered) (Registered under MSME, DPIIT, ROC, Kerala Startup Mission, or any recognized Government body)",
+      "kind": "flat",
+      "handbook_page": 15,
+      "handbook_page_pdf": 18,
+      "points": 30,
+      "documentary_evidence": "Documentary evidence issued by the respective competent authority.",
+      "evidence_issuers": [
+        "msme",
+        "dpiit",
+        "roc",
+        "kerala_startup_mission",
+        "government_body"
+      ],
+      "conditions": {
+        "legally_registered": true
+      },
+      "cap_subhead": 40,
+      "cap_category": 40,
+      "shared_cap_id": "shared_innovation_category_3_9_3_13",
+      "shared_cap_max": 40,
+      "auto_class": "A",
+      "ambiguity_refs": ["A-13"],
+      "remarks": "30 Points. Shared Category Cap 40 for 3.9-3.13"
+    },
+    {
+      "id": "3.10",
+      "group": "III",
+      "major_head": "Innovation, Entrepreneurship & Intellectual Property (IPR)",
+      "sub_activity_head": "Patents",
+      "kind": "milestone_based",
+      "handbook_page": 15,
+      "handbook_page_pdf": 18,
+      "points": [
+        {
+          "title": "Patent Filed",
+          "points": 20,
+          "details": "Application filed with IPO/WIPO"
+        },
+        {
+          "title": "Patent Published",
+          "points": 30,
+          "details": "Published in Patent Journal"
+        },
+        {
+          "title": "Patent Granted / Approved",
+          "points": 40,
+          "details": "Patent legally granted"
+        },
+        {
+          "title": "Patent Licensed",
+          "points": 40,
+          "details": "Technology licensed to industry / user"
+        }
+      ],
+      "documentary_evidence": "Documentary evidence issued by the respective competent authority.",
+      "evidence_issuers": [
+        "ipo",
+        "wipo",
+        "patent_office"
+      ],
+      "conditions": {},
+      "cap_subhead": 40,
+      "cap_category": 40,
+      "shared_cap_id": "shared_innovation_category_3_9_3_13",
+      "shared_cap_max": 40,
+      "auto_class": "A",
+      "ambiguity_refs": ["A-13"],
+      "remarks": "Shared Category Cap 40 for 3.9-3.13"
+    },
+    {
+      "id": "3.11.1",
+      "group": "III",
+      "major_head": "Innovation, Entrepreneurship & Intellectual Property (IPR)",
+      "sub_activity_head": "Prototype Development & Testing: Development of a functional working model (hardware or software) that demonstrates the core functionality of an innovative idea. The prototype must be built, tested for basic performance, and validated by the Innovation Cell or other approved Government agencies",
+      "kind": "flat",
+      "handbook_page": 15,
+      "handbook_page_pdf": 18,
+      "points": 40,
+      "documentary_evidence": "Prototype validation certificate or letter issued by Government-approved innovation agencies.",
+      "evidence_issuers": [
+        "innovation_cell",
+        "government_approved_innovation_agencies"
+      ],
+      "conditions": {
+        "validated_by_approved_agency": true
+      },
+      "cap_subhead": 40,
+      "cap_category": 40,
+      "shared_cap_id": "shared_innovation_category_3_9_3_13",
+      "shared_cap_max": 40,
+      "auto_class": "A",
+      "ambiguity_refs": ["A-13", "A-18"],
+      "remarks": "40 Points. Shared Category Cap 40 for 3.9-3.13"
+    },
+    {
+      "id": "3.11.2",
+      "group": "III",
+      "major_head": "Innovation, Entrepreneurship & Intellectual Property (IPR)",
+      "sub_activity_head": "Innovative Technologies Adopted by Industry: Innovative hardware, software, or system solutions developed by the student that are formally adopted, implemented, or used by a reputed industry or organization. Adoption must be documented through an official letter, certification, or agreement issued by the industry or an authorized body.",
+      "kind": "flat",
+      "handbook_page": 15,
+      "handbook_page_pdf": 18,
+      "points": 40,
+      "documentary_evidence": "Official adoption letter / certification / MoU / implementation report issued by the industry or authorized organization.",
+      "evidence_issuers": [
+        "reputed_industry",
+        "authorized_organization"
+      ],
+      "conditions": {
+        "formally_adopted_by_industry": true
+      },
+      "cap_subhead": 40,
+      "cap_category": 40,
+      "shared_cap_id": "shared_innovation_category_3_9_3_13",
+      "shared_cap_max": 40,
+      "auto_class": "A/C",
+      "ambiguity_refs": ["A-13", "A-18"],
+      "remarks": "40 Points. Shared Category Cap 40 for 3.9-3.13"
+    },
+    {
+      "id": "3.12",
+      "group": "III",
+      "major_head": "Innovation, Entrepreneurship & Intellectual Property (IPR)",
+      "sub_activity_head": "Venture Capital / Angel Funding – Receiving venture capital or angel investment for a student-developed product or idea, supported by official funding documents or agreements from the investor.",
+      "kind": "flat",
+      "handbook_page": 16,
+      "handbook_page_pdf": 19,
+      "points": 40,
+      "documentary_evidence": "Funding agreement, sanction letter, or investment confirmation issued by the angel investor or recognized funding body",
+      "evidence_issuers": [
+        "angel_investor",
+        "recognized_funding_body"
+      ],
+      "conditions": {
+        "official_funding_agreement": true
+      },
+      "cap_subhead": 40,
+      "cap_category": 40,
+      "shared_cap_id": "shared_innovation_category_3_9_3_13",
+      "shared_cap_max": 40,
+      "auto_class": "A",
+      "ambiguity_refs": ["A-13"],
+      "remarks": "40 Points. Shared Category Cap 40 for 3.9-3.13"
+    },
+    {
+      "id": "3.13",
+      "group": "III",
+      "major_head": "Innovation, Entrepreneurship & Intellectual Property (IPR)",
+      "sub_activity_head": "Societal Innovations - Innovative solutions, products, or technologies developed by students that directly address community needs or solve real-world social problems, implemented through IEDC, local bodies, or approved Government agencies. The solution must show measurable impact and be supported by a validation or appreciation letter from the concerned authority.",
+      "kind": "flat",
+      "handbook_page": 16,
+      "handbook_page_pdf": 19,
+      "points": 40,
+      "documentary_evidence": "Validation letter issued by IEDC / Local Bodies / Government Departments / NGOs / Approved agencies. Document must confirm implementation and measurable social impact of the innovation.",
+      "evidence_issuers": [
+        "iedc",
+        "local_bodies",
+        "government_departments",
+        "ngos",
+        "approved_agencies"
+      ],
+      "conditions": {
+        "measurable_social_impact": true,
+        "implemented_through_approved_body": true
+      },
+      "cap_subhead": 40,
+      "cap_category": 40,
+      "shared_cap_id": "shared_innovation_category_3_9_3_13",
+      "shared_cap_max": 40,
+      "auto_class": "A/C",
+      "ambiguity_refs": ["A-13"],
+      "remarks": "40 Points. Shared Category Cap 40 for 3.9-3.13"
+    },
+    {
+      "id": "3.14",
+      "group": "III",
+      "major_head": "Research Publications & Scholarly Output",
+      "sub_activity_head": "Research Publication in Reputed Journals",
+      "kind": "role_based",
+      "handbook_page": 16,
+      "handbook_page_pdf": 19,
+      "points": [
+        {
+          "title": "SCI/SCIE/Scopus Q1–Q2 Journals",
+          "points": 40
+        },
+        {
+          "title": "SCI/SCIE/Scopus Q3–Q4 Journals",
+          "points": 25
+        }
+      ],
+      "documentary_evidence": "Paper copy or Acceptance Letter from the Editor/Editorial Office",
+      "evidence_issuers": [
+        "editor_editorial_office",
+        "publisher"
+      ],
+      "conditions": {
+        "indexed_in": ["SCI", "SCIE", "Scopus"],
+        "quartile": ["Q1", "Q2", "Q3", "Q4"]
+      },
+      "cap_subhead": 40,
+      "cap_category": null,
+      "shared_cap_id": null,
+      "shared_cap_max": null,
+      "auto_class": "A",
+      "ambiguity_refs": [],
+      "remarks": "Maximum- 40 points"
+    },
+    {
+      "id": "3.15",
+      "group": "III",
+      "major_head": "National & International Hackathons",
+      "sub_activity_head": "National Hackathons (Examples: Smart India Hackathon (SIH), KAVACH Cybersecurity Hackathon, hackathons organized by MoE, MHA, AICTE, Central Govt Departments, National Missions)",
+      "kind": "role_based",
+      "handbook_page": 17,
+      "handbook_page_pdf": 20,
+      "points": [
+        {
+          "title": "1st Prize",
+          "points": 40
+        },
+        {
+          "title": "2nd Prize",
+          "points": 35
+        },
+        {
+          "title": "3rd Prize",
+          "points": 30
+        }
+      ],
+      "documentary_evidence": "Certificates issued by the Hackathon Organizing Authority",
+      "evidence_issuers": [
+        "hackathon_organizing_authority",
+        "aicte",
+        "moe",
+        "mha"
+      ],
+      "conditions": {
+        "level": "national",
+        "position": ["1st", "2nd", "3rd"]
+      },
+      "cap_subhead": 40,
+      "cap_category": null,
+      "shared_cap_id": null,
+      "shared_cap_max": null,
+      "auto_class": "A",
+      "ambiguity_refs": ["A-01", "A-02"],
+      "remarks": "Maximum- 40 points. No participation row in handbook."
+    },
+    {
+      "id": "3.16",
+      "group": "III",
+      "major_head": "National & International Hackathons",
+      "sub_activity_head": "International Hackathons (Examples: NASA International Space Apps Challenge, Microsoft Imagine Cup, Google Solution Challenge, IBM Call for Code, Meta Global Hackathon, IEEE YESIST12 Global Finals, AWS Hackathons, Hack Zurich, Junction, etc.)",
+      "kind": "role_based",
+      "handbook_page": 17,
+      "handbook_page_pdf": 20,
+      "points": [
+        {
+          "title": "1st Prize",
+          "points": 40
+        },
+        {
+          "title": "2nd/3rd Prize",
+          "points": 35
+        },
+        {
+          "title": "Participation",
+          "points": 30
+        }
+      ],
+      "documentary_evidence": "Certificates issued by the Hackathon Organizing Authority",
+      "evidence_issuers": [
+        "international_hackathon_organizing_authority"
+      ],
+      "conditions": {
+        "level": "international"
+      },
+      "cap_subhead": 40,
+      "cap_category": null,
+      "shared_cap_id": null,
+      "shared_cap_max": null,
+      "auto_class": "A",
+      "ambiguity_refs": ["A-01", "A-03"],
+      "remarks": "1. 1st Prize: 40 Points, 2. 2nd/3rd Prize: 35 Points, 3. Participation: 30 Points. Maximum- 40 points"
+    },
+    {
+      "id": "3.17",
+      "group": "III",
+      "major_head": "Skill Development Courses",
+      "sub_activity_head": "Skilling Certificates (Approved by the University): Courses offered by KTU with K-DISC, Government agencies, SWAYAM / NPTEL, Spoken Tutorial Project of IIT Bombay (recommended by BoS and approved by Academic Council)",
+      "kind": "per_unit",
+      "handbook_page": 17,
+      "handbook_page_pdf": 20,
+      "points": {
+        "per": "hour_of_approved_course",
+        "points_each": 1
+      },
+      "documentary_evidence": "Certificates must be issued by the respective platform or organization, and the SFA shall ensure that the course appears in the University’s approved list of Skilling Courses and that the duration of each course is clearly indicated and meets the required hours before awarding Activity Points.",
+      "evidence_issuers": [
+        "swayam_nptel",
+        "spoken_tutorial_iit_bombay",
+        "k_disc",
+        "ktu_approved_platforms"
+      ],
+      "conditions": {
+        "must_be_on_university_approved_list": true,
+        "sfa_verification_required": true
+      },
+      "cap_subhead": 40,
+      "cap_category": null,
+      "shared_cap_id": null,
+      "shared_cap_max": null,
+      "auto_class": "A/B",
+      "ambiguity_refs": ["A-14"],
+      "remarks": "1 point per hour of approved skilling courses completed. Maximum- 40 points"
+    }
+  ]
+}

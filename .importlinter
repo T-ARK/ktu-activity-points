@@ -1,0 +1,27 @@
+[importlinter]
+root_package = app
+include_external_packages = True
+
+[importlinter:contract:engine-purity]
+name = Engine and doubt layer purity
+type = forbidden
+source_modules =
+    app.engine
+    app.doubt
+forbidden_modules =
+    app.api
+    app.ingest
+    app.text
+    app.extract
+    app.classify
+    app.authenticity
+    app.db
+
+[importlinter:contract:api-isolation]
+name = API routers must not contain raw engine rule implementations
+type = forbidden
+source_modules =
+    app.api
+forbidden_modules =
+    app.extract
+    app.text
